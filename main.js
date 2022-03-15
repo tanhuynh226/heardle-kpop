@@ -3890,16 +3890,16 @@ var app = (function () {
       attemptInterval: 3e3,
       attemptIntervalAlt: [1e3, 2e3, 4e3, 7e3, 11e3, 16e3],
       maxAttempts: 6,
-      startDate: "2022-02-25",
+      startDate: "2022-03-15",
     },
     Jt = [
       "Bruh moment. Even Bowen would've gotten that.",
       "Sheesh! You're a true Koreaboo!",
       "You're kinda daebak!?",
-      "Hey that wasn't too bad.",
+      "Hey, that was pretty joh-eun.",
       "Not terrible but not great.",
-      "Could've been worse but still kinda sad tbh.",
-      "Atleast you got it I guess :/",
+      "Could've been worse but still kinda sad tbh. I still saranghae you tho.",
+      "Jinjja!? Atleast you got it I guess... :/",
     ];
   function Kt(t) {
     let n, r;
@@ -8605,79 +8605,6 @@ var app = (function () {
     On = {
       subscribe: ue(
         [
-          {
-            url: "https://soundcloud.com/thexxofficial/intro",
-            answer: "The xx - Intro",
-          },
-          {
-            url: "https://soundcloud.com/dualipa/levitating",
-            answer: "Dua Lipa - Levitating",
-          },
-          {
-            url: "https://soundcloud.com/adelemusic/set-fire-to-the-rain-1",
-            answer: "Adele - Set Fire to the Rain",
-          },
-          {
-            url: "https://soundcloud.com/coldplay/the-scientist",
-            answer: "Coldplay - The Scientist",
-          },
-          {
-            url: "https://soundcloud.com/bennyblanco/eastside",
-            answer: "Benny Blanco - Eastside (feat. Halsey and Khalid)",
-          },
-          {
-            url: "https://soundcloud.com/nirvana/smells-like-teen-spirit-1",
-            answer: "Nirvana - Smells Like Teen Spirit",
-          },
-          {
-            url: "https://soundcloud.com/amalaofficial/streets",
-            answer: "Doja cat - Streets",
-          },
-          {
-            url: "https://soundcloud.com/beyonce/halo",
-            answer: "Beyoncé - Halo",
-          },
-          {
-            url: "https://soundcloud.com/fleetwoodmacofficial/dreams",
-            answer: "Fleetwood Mac - Dreams",
-          },
-          {
-            url: "https://soundcloud.com/kanyewest/black-skinhead",
-            answer: "Kanye West - Black Skinhead",
-          },
-          {
-            url: "https://soundcloud.com/arianagrande/7-rings",
-            answer: "Ariana Grande - 7 rings",
-          },
-          {
-            url: "https://soundcloud.com/kingsofleon/use-somebody",
-            answer: "Kings of Leon - Use Somebody",
-          },
-          {
-            url: "https://soundcloud.com/outkast-music/ms-jackson",
-            answer: "Outkast - Ms. Jackson",
-          },
-          {
-            url: "https://soundcloud.com/secret-service-862007284/thats-what-i-want",
-            answer: "Lil Nas X - That's What I Want",
-          },
-          {
-            url: "https://soundcloud.com/rihanna/rude-boy",
-            answer: "Rihanna - Rude Boy",
-          },
-          {
-            url: "https://soundcloud.com/whitneyhouston/i-wanna-dance-with-somebody-1",
-            answer:
-              "Whitney Houston - I Wanna Dance With Somebody (Who Loves Me)",
-          },
-          {
-            url: "https://soundcloud.com/wheatus-official/teenage-dirtbag-1",
-            answer: "Wheatus - Teenage Dirtbag",
-          },
-          {
-            url: "https://soundcloud.com/lizzomusic/truth-hurts",
-            answer: "Lizzo - Truth Hurts",
-          },
           {
             url: "https://soundcloud.com/l2share80/stray-kids-miroh",
             answer: "Stray Kids - Miroh",
