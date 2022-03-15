@@ -4019,7 +4019,7 @@ var app = (function () {
             (f = w("div")),
             (m = w("div")),
             (k = w("div")),
-            (k.textContent = "Next Heardle:"),
+            (k.textContent = "Next K-💩 song in:"),
             (b = x()),
             Q(S.$$.fragment),
             (D = x()),
@@ -8964,7 +8964,7 @@ var app = (function () {
           Q(Y.$$.fragment),
           (C = x()),
           H && H.c(),
-          (Ln.title = "Heardle K-💩 - That daily musical intros game"),
+          (Ln.title = "Heardle K-💩 - That K-Pop song intros game"),
           M(t, "name", "description"),
           M(
             t,
