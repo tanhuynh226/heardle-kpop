@@ -708,7 +708,7 @@ var app = (function () {
             Q(a.$$.fragment),
             (l = x()),
             (u = w("h1")),
-            (u.textContent = "Heardle"),
+            (u.textContent = "Heardle K-💩"),
             (c = x()),
             (d = w("div")),
             Q(h.$$.fragment),
@@ -3622,7 +3622,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful homage to <a href="https://www.heardle.app/" title="Wordle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle is semi-randomly plucked from a long list of popularly streamed artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. Please be kind 🖖🏽.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful homage to <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. Please be kind 🖖🏽.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -4026,7 +4026,7 @@ var app = (function () {
             (T = w("div")),
             (Y = w("div")),
             (Y.innerHTML =
-              '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n                <span class="px-1">Heardle?</span>'),
+              '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n                <span class="px-1">Heardle K-💩?</span>'),
             (C = x()),
             Q(O.$$.fragment),
             M(n, "class", "text-lg text-custom-line"),
@@ -4235,7 +4235,7 @@ var app = (function () {
       s = (e[0].length * e[1].attemptInterval) / 1e3 + "";
     return {
       c() {
-        (t = _("You got today's Heardle within the first ")),
+        (t = _("You got today's Heardle K-💩 within the first ")),
           (n = _(s)),
           (r = _(" seconds."));
       },
@@ -4262,7 +4262,7 @@ var app = (function () {
       a = e[1].attemptIntervalAlt[e[0].length - 1] / 1e3 > 1 ? "s" : "";
     return {
       c() {
-        (t = _("You got today's Heardle within ")),
+        (t = _("You got today's Heardle K-💩 within ")),
           (n = _(o)),
           (r = _("\n                second")),
           (s = _(a)),
@@ -4292,7 +4292,7 @@ var app = (function () {
     let n;
     return {
       c() {
-        n = _("You didn't get today's Heardle. Better luck tomorrow!");
+        n = _("You didn't get today's Heardle K-💩. Better luck tomorrow!");
       },
       m(e, t) {
         g(e, n, t);
@@ -8971,8 +8971,8 @@ var app = (function () {
             answer: "Lizzo - Truth Hurts",
           },
           {
-            url: "https://soundcloud.com/blurofficial/song-2",
-            answer: "Blur - Song 2",
+            url: "https://soundcloud.com/l2share80/stray-kids-miroh",
+            answer: "Stray Kids - Miroh",
           },
           {
             url: "https://soundcloud.com/childish-gambino/redbone",
@@ -9341,12 +9341,12 @@ var app = (function () {
           Q(Y.$$.fragment),
           (C = x()),
           H && H.c(),
-          (Ln.title = "Heardle - That daily musical intros game"),
+          (Ln.title = "Heardle K-💩 - That daily musical intros game"),
           M(t, "name", "description"),
           M(
             t,
             "content",
-            "Guess the song from the intro in as few tries as possible"
+            "Guess the K-Pop song from the intro in as few tries as possible"
           ),
           M(n, "rel", "apple-touch-icon"),
           M(n, "sizes", "180x180"),
