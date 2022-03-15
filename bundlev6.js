@@ -3622,7 +3622,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful homage to <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. Please be kind 🖖🏽.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful rip-off to <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. If you want to contribute to the library of artists and songs, please DM @natgib#0226 on Discord.</p> \n\n<p class="mb-3">Maybe don\'t share it with too many people so it doesn\'t get popular and I get a cease and desist? XD</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -4432,7 +4432,7 @@ var app = (function () {
         u,
         c,
         () => {
-          let e = "#Heardle #" + s.id,
+          let e = "#Heardle K-💩 #" + s.id,
             t = "";
           a
             ? r.length < i.maxAttempts / 3
@@ -4449,7 +4449,7 @@ var app = (function () {
                 ? (t += "⬛️")
                 : (t += "🟥")
               : (t += "⬜️");
-          let o = e + "\n\n" + t + "\n\nhttps://heardle.app";
+          let o = e + "\n\n" + t + "\n\nhttps://heardle-kpop.glitch.me/";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -4534,7 +4534,7 @@ var app = (function () {
           (t = w("div")),
             (n = w("div")),
             (n.innerHTML =
-              '<div class="mr-4 w-8 text-custom-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7"><circle cx="5.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="15.5" r="2.5"></circle><path d="M8 17V5l12-2v12"></path></svg></div> \n        <div><p>Listen to the intro, then find the correct artist &amp; title in the list.</p></div>'),
+              '<div class="mr-4 w-8 text-custom-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7"><circle cx="5.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="15.5" r="2.5"></circle><path d="M8 17V5l12-2v12"></path></svg></div> \n        <div><p>Listen to the intro, then find the correct K-Pop artist &amp; title in the list.</p></div>'),
             (r = x()),
             (s = w("div")),
             (s.innerHTML =
