@@ -3622,7 +3622,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful homage to <a href="https://www.nytimes.com/games/wordle/index.html" title="Wordle">Wordle</a>, with a musical twist.</p> \n\n<p class="mb-3">Each Heardle is semi-randomly plucked from a long list of popularly streamed artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">Heardle was made for a small group of friends, then somehow gained millions of players overnight. Please be kind 🖖🏽.</p> \n\n<p class="mb-3"><a href="https://twitter.com/Heardle_app" class="flex items-center no-underline "><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z"></path></svg> @Heardle_app</a></p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful homage to <a href="https://www.heardle.app/" title="Wordle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle is semi-randomly plucked from a long list of popularly streamed artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. Please be kind 🖖🏽.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -3648,7 +3648,7 @@ var app = (function () {
         (n = w("div")),
           (r = w("a")),
           (r.innerHTML =
-            '<span class="kofitext svelte-1d3p4dy"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Support us on Ko-Fi</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>'),
+            '<span class="kofitext svelte-1d3p4dy"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Support the original devs on Ko-Fi</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>'),
           M(
             r,
             "class",
@@ -3836,11 +3836,11 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "Heardle went from a small game played amongst friends, to gaining millions of daily players overnight. Honestly, we're overwhelmed!"),
+              "Heardle is very pog. I love Heardle."),
             (r = x()),
             (s = w("p")),
             (s.textContent =
-              "If you've enjoyed playing, please consider supporting us – we'll do our best to keep improving Heardle for everyone."),
+              "If you've enjoyed playing, please consider supporting the Heardle devs."),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
