@@ -3718,7 +3718,7 @@ var app = (function () {
         (n = w("div")),
           (r = w("div")),
           (r.innerHTML =
-            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for contributing:</span>'),
+            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Special thank you to the following peeps:</span>'),
           (s = x()),
           (i = w("div")),
           (o = w("p")),
@@ -3840,7 +3840,7 @@ var app = (function () {
             (r = x()),
             (s = w("p")),
             (s.textContent =
-              "Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game. If you've enjoyed playing Heardle K-💩, then please consider supporting the the real Heardle devs."),
+              "Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game. If you've enjoyed playing Heardle K-💩, then please consider supporting the real Heardle devs."),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
