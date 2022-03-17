@@ -3718,7 +3718,7 @@ var app = (function () {
         (n = w("div")),
           (r = w("div")),
           (r.innerHTML =
-            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for assisting with this project:</span>'),
+            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for contributing to the song catalog:</span>'),
           (s = x()),
           (i = w("div")),
           (o = w("p")),
@@ -8646,7 +8646,6 @@ var app = (function () {
       "BOL4 - When I Fall in Love",
       "BOL4 - Travel",
       "BOL4 - Blue",
-      "BOL4 - Seattle Alone",
       "BOL4 - #First Love",
       "BOL4 - XX",
       "BOL4 - Love Letter",
@@ -8793,7 +8792,6 @@ var app = (function () {
       "ITZY - Dalla Dalla",
       "ITZY - ICY",
       "ITZY - SURF",
-      "ITZY - NOBODY LIKE YOU",
       "ITZY - BE IN LOVE",
       "ITZY - Don\’t Give A What",
       "ITZY - Not Shy",
@@ -8992,7 +8990,6 @@ var app = (function () {
       "SuperM - No Manners",
       "SURAN, Changmo - WINE",
       "SURAN - Heartbeat",
-      "SURAN - Love Story",
       "SURAN - Into The Abyss",
       "Taeyang - Wedding Dress",
       "Taeyang - Eyes, Nose, Lips",
@@ -9103,7 +9100,7 @@ var app = (function () {
           },
           {
             url: "https://soundcloud.com/vanessaa0303/suran-love-story-ft-crush-feat-3d-audio-use-headphones",
-            answer: "Twice - CHILLAX",
+            answer: "SURAN, Crush - Love Story",
           },
           {
             url: "https://soundcloud.com/twice-57013/chillax",
@@ -9114,8 +9111,20 @@ var app = (function () {
             answer: "LABOUM - Journey To Atlantis",
           },
           {
+            url: "https://soundcloud.com/pokpop/bol4-seattle-alone",
+            answer: "BOL4 - Seattle Alone",
+          },
+          {
             url: "https://soundcloud.com/trblinprds/sik-k-ph-1-jay-park-iffy-prod-groovyroom",
             answer: "Jay Park, SiK-K, pH-1 - iffy (Prod. GroovyRoom)",
+          },
+          {
+            url: "https://soundcloud.com/itzy-music/nobody-like-you",
+            answer: "ITZY - NOBODY LIKE YOU",
+          },
+          {
+            url: "https://soundcloud.com/user-64036812/whale-kim-sejeong",
+            answer: "Sejeong - Whale",
           },
         ],
         Pn
