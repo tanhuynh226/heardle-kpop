@@ -3622,7 +3622,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful rip-off to <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. If you want to contribute to the library of artists and songs, please DM @natgib#0226 on Discord.</p> \n\n<p class="mb-3">Maybe don\'t share it with too many people so it doesn\'t get popular and I get a cease and desist? XD</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful rip-off to <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">This was cloned from Heardle, but I changed a few things. If you want to contribute to the library of artists and songs, please DM @natgib#0226 on Discord.</p> \n\n<p class="mb-3">If your favorite isn\'t in the game, I\'m sorry! It is really difficult for me to add every single K-Pop artist.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -3718,7 +3718,7 @@ var app = (function () {
         (n = w("div")),
           (r = w("div")),
           (r.innerHTML =
-            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for contributing to the song catalog:</span>'),
+            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for contributing:</span>'),
           (s = x()),
           (i = w("div")),
           (o = w("p")),
@@ -3836,11 +3836,11 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "I hope you guys like Heardle K-💩. I made this because I was desperate to find any escape from having to study for finals and because Conner told me to."),
+              "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew how many people wanted it. 😊"),
             (r = x()),
             (s = w("p")),
             (s.textContent =
-              "If you've enjoyed playing Heardle K-💩, then please consider supporting the the real Heardle devs."),
+              "Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game. If you've enjoyed playing Heardle K-💩, then please consider supporting the the real Heardle devs."),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
@@ -3898,7 +3898,7 @@ var app = (function () {
       "You're kinda daebak!?",
       "Hey, that was pretty joh-eun.",
       "Not nappeun.",
-      "Could've been worse but still kinda sad tbh. I still saranghae you tho.",
+      "Could've been worse but I still saranghae you tho.",
       "Jinjja!? Atleast you got it I guess... :/",
     ];
   function Kt(t) {
