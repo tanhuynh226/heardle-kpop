@@ -3836,7 +3836,7 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew how many people wanted it. 😊"),
+              "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew a lot of people would want to play. 😊"),
             (r = x()),
             (s = w("p")),
             (s.textContent =
