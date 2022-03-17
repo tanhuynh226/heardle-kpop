@@ -3718,7 +3718,7 @@ var app = (function () {
         (n = w("div")),
           (r = w("div")),
           (r.innerHTML =
-            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Might as well keep their list of supporters because why not:</span>'),
+            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Thank you to the following for assisting with this project:</span>'),
           (s = x()),
           (i = w("div")),
           (o = w("p")),
@@ -3813,7 +3813,7 @@ var app = (function () {
     return (
       P(async function () {
         (async function () {
-          const e = await fetch("https://heardle-api.vercel.app/api");
+          const e = await fetch("https://heardle-kpop.glitch.me/supporters.json");
           return await e.json();
         })().then((e) => {
           n(0, (r = e.supporters));
@@ -3893,11 +3893,11 @@ var app = (function () {
       startDate: "2022-03-15",
     },
     Jt = [
-      "Bruh moment. Even Bowen would've gotten that.",
+      "Bruh moment. You're kind of a byungshin but it's all good.",
       "Sheesh! You're a true Koreaboo!",
       "You're kinda daebak!?",
       "Hey, that was pretty joh-eun.",
-      "Not terrible but not great.",
+      "Not nappeun.",
       "Could've been worse but still kinda sad tbh. I still saranghae you tho.",
       "Jinjja!? Atleast you got it I guess... :/",
     ];
