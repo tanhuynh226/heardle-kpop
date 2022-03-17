@@ -4449,7 +4449,7 @@ var app = (function () {
                 ? (t += "⬛️")
                 : (t += "🟥")
               : (t += "⬜️");
-          let o = e + "\n\n" + t + "\n\nhttps://heardle-kpop.glitch.me/";
+          let o = e + "\n\n" + t /*+ "\n\nhttps://heardle-kpop.glitch.me/"*/;
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
