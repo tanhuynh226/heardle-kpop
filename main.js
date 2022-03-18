@@ -8883,7 +8883,6 @@ var app = (function () {
       "NCT U - Make A Wish (Birthday Song)",
       "NCT U - Universe (Let\’s Play Ball)",
       "NCT U - 90\’s Love",
-      "NCT U - BOSS",
       "NCT U - The 7th Sense",
       "NCT U - Misfit",
       "NCT 127 - Kick It",
@@ -8970,7 +8969,6 @@ var app = (function () {
       "Stray Kids - CHEESE",
       "Somi - Anymore",
       "Somi - XOXO",
-      "Somi - DUMB DUMB",
       "Somi - Birthday",
       "Somi - Outta My Head",
       "Somi - What You Waiting For",
@@ -9091,6 +9089,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/rk1mea33yulh/nct-u-boss",
             answer: "NCT U - BOSS",
+          },
+          {
+            url: "https://soundcloud.com/somi_official/dumb-dumb",
+            answer: "Somi - DUMB DUMB",
           },
           {
             url: "https://soundcloud.com/l2share47/weki-meki-crush",
