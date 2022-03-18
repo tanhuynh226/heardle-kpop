@@ -3893,13 +3893,13 @@ var app = (function () {
       startDate: "2022-03-15",
     },
     Jt = [
-      "Bruh moment. You're kind of a byungshin but it's all good.",
+      "Unlucky. At least you discovered a new song! 😉",
       "Sheesh! You're a true Koreaboo!",
-      "You're kinda daebak!?",
+      "You're pretty daebak!?",
       "Hey, that was pretty joh-eun.",
       "Not nappeun.",
       "Could've been worse but I still saranghae you tho.",
-      "Jinjja!? Atleast you got it I guess... :/",
+      "Jinjja!? Atleast you got it.",
     ];
   function Kt(t) {
     let n, r;
