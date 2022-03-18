@@ -3893,13 +3893,13 @@ var app = (function () {
       startDate: "2022-03-15",
     },
     Jt = [
-      "Bruh moment. You're kind of a byungshin but it's all good.",
-      "Sheesh! You're a true Koreaboo!",
-      "You're kinda daebak!?",
+      "Unlucky. At least you discovered a new song! 😉", // FAILED
+      "Sheesh! You're a true Koreaboo!", // First try
+      "You're pretty daebak!?",
       "Hey, that was pretty joh-eun.",
       "Not nappeun.",
-      "Could've been worse but I still saranghae you tho.",
-      "Jinjja!? Atleast you got it I guess... :/",
+      "Could've been worse but I still saranghae you.",
+      "Jinjja!? Atleast you got it!", // Sixth try
     ];
   function Kt(t) {
     let n, r;
