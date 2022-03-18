@@ -8802,7 +8802,6 @@ var app = (function () {
       "IU - BBIBBI",
       "IU - Ending Scene",
       "IU - Strawberry Moon",
-      "IU - Blueming",
       "IU - Through The Night",
       "IU, G-Dragon - Palette",
       "IU, Suga - eight",
@@ -8896,7 +8895,6 @@ var app = (function () {
       "N.Flying - Hot Potato",
       "NMIXX - O.O",
       "OH MY GIRL - Secret Garden",
-      "OH MY GIRL - Nonstop",
       "OH MY GIRL - Coloring Book",
       "OH MY GIRL - Dolphin",
       "OH MY GIRL - Dun Dun Dance",
@@ -8971,7 +8969,7 @@ var app = (function () {
       "Somi - XOXO",
       "Somi - Birthday",
       "Somi - Outta My Head",
-      "Somi - What You Waiting For",
+      "Somi - DUMB DUMB",
       "suggi - astroboy.",
       "suggi - fuck u, goodluck.",
       "suggi - uwu",
@@ -9091,8 +9089,20 @@ var app = (function () {
             answer: "NCT U - BOSS",
           },
           {
-            url: "https://soundcloud.com/somi_official/dumb-dumb",
-            answer: "Somi - DUMB DUMB",
+            url: "https://soundcloud.com/somi_official/what-you-waiting-for",
+            answer: "Somi - What You Waiting For",
+          },
+          {
+            url: "https://soundcloud.com/mai_g33z/big-bang-sober",
+            answer: "BIGBANG - Sober",
+          },
+          {
+            url: "https://soundcloud.com/seoyeon-962740403/oh-my-girl-nonstop-2",
+            answer: "OH MY GIRL - Nonstop",
+          },
+          {
+            url: "https://soundcloud.com/user-306544001/blueming",
+            answer: "IU - Blueming",
           },
           {
             url: "https://soundcloud.com/l2share47/weki-meki-crush",
@@ -9117,10 +9127,6 @@ var app = (function () {
           {
             url: "https://soundcloud.com/user-947257024/junny-movie-mp3",
             answer: "JUNNY - MOVIE",
-          },
-          {
-            url: "https://soundcloud.com/somi_official/anymore",
-            answer: "Somi - Anymore",
           },
           {
             url: "https://soundcloud.com/vanessaa0303/suran-love-story-ft-crush-feat-3d-audio-use-headphones",
@@ -9149,6 +9155,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/user-64036812/whale-kim-sejeong",
             answer: "Sejeong - Whale",
+          },
+          {
+            url: "https://soundcloud.com/somi_official/anymore",
+            answer: "Somi - Anymore",
           },
         ],
         Pn
