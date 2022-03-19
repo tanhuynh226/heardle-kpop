@@ -3840,7 +3840,7 @@ var app = (function () {
             (r = x()),
             (s = w("p")),
             (s.innerHTML =
-              '<p class="mb-3">Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game.</p> \n\n<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the real <a href="https://ko-fi.com/heardle">Heardle devs.</a></p>'),
+              '<p class="mb-3">Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game.</p> \n\n<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the <a href="https://ko-fi.com/heardle">real Heardle devs.</a></p>'),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
