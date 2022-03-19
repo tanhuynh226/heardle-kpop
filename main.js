@@ -8642,7 +8642,6 @@ var app = (function () {
       "BOL4 - Lonely",
       "BOL4 - You(=i)",
       "BOL4 - Galaxy",
-      "BOL4 - Travel",
       "BOL4 - #First Love",
       "BOL4 - Love Letter",
       "Brave Girls - Rollin’", 
@@ -8789,7 +8788,6 @@ var app = (function () {
       "I.O.I - DOWNPOUR",
       "I.O.I - Whatta Man (Good man)",
       "ITZY - Wannabe",
-      "ITZY - Dalla Dalla",
       "ITZY - ICY",
       "ITZY - Not Shy",
       "ITZY - In the morning",
@@ -8921,8 +8919,8 @@ var app = (function () {
       "Red Velvet - Bad Boy",
       "ROSÉ - On The Ground",
       "ROSÉ - Gone",
-      "Sejeong - Flower Way (Prod. By ZICO)",
       "Sejeong - All of My Days",
+      "Sejeong - Whale",
       "Seori - Running Through The Night",
       "Seori - Lovers In The Night",
       "Seori, eaJ - Dive with you",
@@ -9014,9 +9012,7 @@ var app = (function () {
       "TEN - Paint Me Naked",
       "Twice - What is Love?",
       "Twice - TT",
-      "Twice - The Best Thing I Ever Did",
       "Twice - Merry & Happy",
-      "Twice - Heart Shaker",
       "Twice - YES or YES",
       "Twice - The Feels",
       "Twice - SCIENTIST",
@@ -9131,8 +9127,8 @@ var app = (function () {
             answer: "SURAN, Crush - Love Story",
           },
           {
-            url: "https://soundcloud.com/twice-57013/chillax",
-            answer: "Twice - CHILLAX",
+            url: "https://soundcloud.com/l2sharetwice/twice-heart-shaker-merry-happy-247",
+            answer: "Twice - Heart Shaker",
           },
           {
             url: "https://soundcloud.com/nanda-aliya/laboum-journey-to-atlantis",
@@ -9140,7 +9136,7 @@ var app = (function () {
           },
           {
             url: "https://soundcloud.com/pokpop/bol4-seattle-alone",
-            answer: "BOL4 - Seattle Alone",
+            answer: "BOL4 - Travel",
           },
           {
             url: "https://soundcloud.com/trblinprds/sik-k-ph-1-jay-park-iffy-prod-groovyroom",
@@ -9148,11 +9144,11 @@ var app = (function () {
           },
           {
             url: "https://soundcloud.com/itzy-music/nobody-like-you",
-            answer: "ITZY - NOBODY LIKE YOU",
+            answer: "ITZY - DALLA DALLA",
           },
           {
-            url: "https://soundcloud.com/user-64036812/whale-kim-sejeong",
-            answer: "Sejeong - Whale",
+            url: "https://soundcloud.com/user-309258560/kim-sejeong-flower-road,
+            answer: "Sejeong - Flower Way (Prod. By ZICO)",
           },
           {
             url: "https://soundcloud.com/somi_official/anymore",
