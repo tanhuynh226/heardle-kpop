@@ -4444,7 +4444,7 @@ var app = (function () {
         u,
         c,
         () => {
-          let e = "#Heardle Kpop #" + s.id,
+          let e = "Heardle Kpop #" + s.id,
             t = "";
           a
             ? r.length < i.maxAttempts / 3
