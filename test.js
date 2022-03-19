@@ -708,7 +708,7 @@ var app = (function () {
             Q(a.$$.fragment),
             (l = x()),
             (u = w("h1")),
-            (u.textContent = "Heardle K-💩"),
+            (u.textContent = "Heardle"),
             (c = x()),
             (d = w("div")),
             Q(h.$$.fragment),
@@ -2200,7 +2200,7 @@ var app = (function () {
       });
     }
     let D;
-    function $() {
+    function T() {
       (y = SC.Widget("soundcloud" + h.id)).bind(
         SC.Widget.Events.READY,
         function () {
@@ -2211,115 +2211,113 @@ var app = (function () {
               });
           }),
             y.bind(SC.Widget.Events.PAUSE, function () {
-              S(!1);
+              $(!1);
             }),
             y.bind(SC.Widget.Events.PLAY, function () {
-              S(!0),
-                x ||
-                  (pe("startGame", {
-                    name: "startGame",
-                  }),
-                  pe("startGame#" + h.id, {
-                    name: "startGame",
-                  }),
-                  (b = !0)),
+              b ||
+                (pe("startGame", {
+                  name: "startGame",
+                }),
+                pe("startGame#" + h.id, {
+                  name: "startGame",
+                }),
+                (b = !0)),
                 $(!0),
-                n(12, (_ = !0));
+                n(12, (x = !0));
             }),
-            g.bind(SC.Widget.Events.PLAY_PROGRESS, function (e) {
-              1 == s
-                ? m.isPrime
-                  ? (n(9, (y = (e.currentPosition / a[o - 1]) * 100)),
-                    e.currentPosition > a[o - 1] && (g.pause(), g.seekTo(0)))
-                  : (n(
-                      9,
-                      (y = (e.currentPosition / (c * h.attemptInterval)) * 100)
-                    ),
-                    e.currentPosition > c * h.attemptInterval &&
-                      (g.pause(), g.seekTo(0)))
-                : (n(9, (y = (e.currentPosition / f) * 100)),
-                  e.currentPosition > f && (g.pause(), g.seekTo(0))),
-                n(10, (v = e.currentPosition));
+            y.bind(SC.Widget.Events.PLAY_PROGRESS, function (e) {
+              n(11, (w = e.currentPosition)),
+                1 == s
+                  ? p.isPrime
+                    ? (n(10, (v = (w / u) * 100)), w > u && M())
+                    : (n(10, (v = (w / (d * f.attemptInterval)) * 100)),
+                      w > d * f.attemptInterval && M())
+                  : (n(10, (v = (w / m) * 100)), w > m && M());
             });
         }
       );
     }
-    P(() => {
+    A(() => {
       const e = document.createElement("iframe");
-      (e.name = d.id),
-        (e.id = "soundcloud" + d.id),
+      (e.name = h.id),
+        (e.id = "soundcloud" + h.id),
         (e.allow = "autoplay"),
         (e.height = 0),
         (e.src =
-          "https://w.soundcloud.com/player/?url=" + d.url + "&cache=" + d.id),
-        M.appendChild(e),
-        (k = !0),
-        w &&
+          "https://w.soundcloud.com/player/?url=" + h.url + "&cache=" + h.id),
+        D.appendChild(e),
+        (_ = !0),
+        k &&
           (setTimeout(() => {
-            n(12, (b = !0));
+            n(13, (S = !0));
           }, 6e3),
-          $());
+          T());
     });
     return (
       (e.$$set = (e) => {
-        "currentAttempt" in e && n(0, (c = e.currentAttempt)),
-          "currentHeardle" in e && n(1, (d = e.currentHeardle)),
-          "config" in e && n(2, (h = e.config)),
-          "trackDuration" in e && n(3, (f = e.trackDuration)),
-          "gameState" in e && n(4, (m = e.gameState));
+        "currentAttempt" in e && n(0, (d = e.currentAttempt)),
+          "currentHeardle" in e && n(1, (h = e.currentHeardle)),
+          "config" in e && n(2, (f = e.config)),
+          "trackDuration" in e && n(3, (m = e.trackDuration)),
+          "gameState" in e && n(4, (p = e.gameState));
       }),
       (e.$$.update = () => {
-        16 & e.$$.dirty[0] && n(17, (r = m.musicIsPlaying)),
-          16 & e.$$.dirty[0] && n(14, (s = m.gameIsActive)),
-          16 & e.$$.dirty[0] && n(16, (i = m.playerIsReady)),
-          1 & e.$$.dirty[0] && n(6, (o = c)),
-          4 & e.$$.dirty[0] && n(7, (a = h.attemptIntervalAlt)),
-          213 & e.$$.dirty[0] &&
+        16 & e.$$.dirty[0] && n(18, (r = p.musicIsPlaying)),
+          16 & e.$$.dirty[0] && n(15, (s = p.gameIsActive)),
+          16 & e.$$.dirty[0] && n(17, (i = p.playerIsReady)),
+          1 & e.$$.dirty[0] && n(7, (o = d)),
+          4 & e.$$.dirty[0] && n(8, (a = f.attemptIntervalAlt)),
+          405 & e.$$.dirty[0] &&
             n(
-              15,
-              (l = m.isPrime
+              16,
+              (l = p.isPrime
                 ? (a[o - 1] / a.slice(-1)[0]) * 100
-                : (c / h.maxAttempts) * 100)
-            );
+                : (d / f.maxAttempts) * 100)
+            ),
+          384 & e.$$.dirty[0] && (u = a[o - 1]);
       }),
       [
-        c,
         d,
         h,
         f,
         m,
+        p,
         () => {
-          g.toggle();
+          y.seekTo(0), y.play();
         },
+        M,
         o,
         a,
-        p,
-        y,
+        g,
         v,
-        _,
-        b,
-        M,
+        w,
+        x,
+        S,
+        D,
         s,
         l,
         i,
         r,
         function () {
-          (w = !0),
-            k &&
+          (k = !0),
+            _ &&
               (setTimeout(() => {
-                n(12, (b = !0));
+                n(13, (S = !0));
               }, 6e3),
-              $());
+              T());
         },
         () => {
-          g.seekTo(0), g.play();
+          y.toggle();
+        },
+        () => {
+          y.seekTo(0), y.play();
         },
         () => {
           window.location.reload();
         },
         function (e) {
           H[e ? "unshift" : "push"](() => {
-            (M = e), n(13, M);
+            (D = e), n(14, D);
           });
         },
       ]
@@ -2340,18 +2338,26 @@ var app = (function () {
             config: 2,
             trackDuration: 3,
             gameState: 4,
-            togglePlayState: 5,
-            resetAndPlay: 19,
+            togglePlayState: 20,
+            scPlay: 5,
+            scPause: 6,
+            resetAndPlay: 21,
           },
           null,
           [-1, -1]
         );
     }
     get togglePlayState() {
+      return this.$$.ctx[20];
+    }
+    get scPlay() {
       return this.$$.ctx[5];
     }
+    get scPause() {
+      return this.$$.ctx[6];
+    }
     get resetAndPlay() {
-      return this.$$.ctx[19];
+      return this.$$.ctx[21];
     }
   }
   "undefined" != typeof globalThis
@@ -3298,7 +3304,7 @@ var app = (function () {
           n(4, (r = "")))
         : l.focus();
     }
-    P(() => {
+    A(() => {
       !(function () {
         const e = new wt({
           placeHolder: "Know it? Search for the artist / title",
@@ -3490,7 +3496,7 @@ var app = (function () {
       },
     };
   }
-  function Pt(e) {
+  function At(e) {
     let t, n, s, i, o, a, l, u, c;
     const d = [Ot, Ct],
       h = [];
@@ -3613,10 +3619,10 @@ var app = (function () {
       ]
     );
   }
-  class At extends se {
+  class Pt extends se {
     constructor(e) {
       super(),
-        re(this, e, Lt, Pt, i, {
+        re(this, e, Lt, At, i, {
           title: 0,
           hasFrame: 1,
         });
@@ -3628,7 +3634,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">If your favorite artist/song isn\'t in the game, I\'m sorry! It is really difficult for me to add every single K-Pop artist.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://glitch.com/">Glitch</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful homage to <a href="https://www.nytimes.com/games/wordle/index.html" title="Wordle">Wordle</a>, with a musical twist.</p> \n\n<p class="mb-3">Each Heardle is semi-randomly plucked from a long list of popularly streamed artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">Heardle was made for a small group of friends, then somehow gained millions of players overnight. Please be kind 🖖🏽.</p> \n\n<p class="mb-3"><a href="https://twitter.com/Heardle_app" class="flex items-center no-underline "><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z"></path></svg> @Heardle_app</a></p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -3660,7 +3666,7 @@ var app = (function () {
             "class",
             "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
           ),
-          M(r, "href", "https://ko-fi.com/heardlekpop"),
+          M(r, "href", "https://ko-fi.com/heardle"),
           M(r, "title", "Support us on Ko-Fi"),
           M(
             n,
@@ -3693,7 +3699,7 @@ var app = (function () {
       super(), re(this, e, Wt, It, i, {});
     }
   }
-  function Ft(t) {
+  function Gt(t) {
     let n, r;
     return (
       (n = new Ee({})),
@@ -3717,14 +3723,14 @@ var app = (function () {
       }
     );
   }
-  function Gt(t) {
+  function Ft(t) {
     let n, r, s, i, o, a, l, u, c, d;
     return {
       c() {
         (n = w("div")),
           (r = w("div")),
           (r.innerHTML =
-            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Special thank you to the following peeps:</span>'),
+            '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n        <span class="px-1 text-custom-line text-sm">Much love to all our supporters:</span>'),
           (s = x()),
           (i = w("div")),
           (o = w("p")),
@@ -3772,7 +3778,7 @@ var app = (function () {
   }
   function Et(e) {
     let t, n, r, s;
-    const i = [Gt, Ft],
+    const i = [Ft, Gt],
       o = [];
     function a(e, t) {
       return e[0] ? 0 : 1;
@@ -3817,9 +3823,9 @@ var app = (function () {
   function jt(e, t, n) {
     let r;
     return (
-      P(async function () {
+      A(async function () {
         (async function () {
-          const e = await fetch("https://heardle-kpop.glitch.me/supporters.json");
+          const e = await fetch("https://heardle-api.vercel.app/api");
           return await e.json();
         })().then((e) => {
           n(0, (r = e.supporters));
@@ -3842,11 +3848,11 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew a lot of people would want to play. 😊"),
+              "Heardle went from a small game played amongst friends, to gaining millions of daily players overnight. Honestly, we're overwhelmed!"),
             (r = x()),
             (s = w("p")),
-            (s.innerHTML =
-              '<p class="mb-3">Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game.</p> \n\n<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the <a href="https://ko-fi.com/heardle">real Heardle devs.</a></p>'),
+            (s.textContent =
+              "If you've enjoyed playing, please consider supporting us – we'll do our best to keep improving Heardle for everyone."),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
@@ -3896,16 +3902,16 @@ var app = (function () {
       attemptInterval: 3e3,
       attemptIntervalAlt: [1e3, 2e3, 4e3, 7e3, 11e3, 16e3],
       maxAttempts: 6,
-      startDate: "2022-03-15",
+      startDate: "2022-02-25",
     },
     Jt = [
-      "Unlucky. At least you discovered a new song! 😉", // FAILED
-      "Sheesh! You're a true Koreaboo!", // First try
-      "You're pretty daebak!?",
-      "Hey, that was pretty joh-eun.",
-      "Not nappeun.",
-      "Could've been worse but I still saranghae you.",
-      "Jinjja!? Atleast you got it!", // Sixth try
+      "Unlucky!",
+      "A virtuoso performance!",
+      "An act of genius!",
+      "You're a star!",
+      "What a pro!",
+      "You're a winner!",
+      "Good result!",
     ];
   function Kt(t) {
     let n, r;
@@ -3983,11 +3989,11 @@ var app = (function () {
       Y,
       C,
       O,
-      P,
+      A,
       L = Jt[e[3]] + "",
-      A = Array(e[1].maxAttempts),
+      P = Array(e[1].maxAttempts),
       N = [];
-    for (let t = 0; t < A.length; t += 1) N[t] = on(Xt(e, A, t));
+    for (let t = 0; t < P.length; t += 1) N[t] = on(Xt(e, P, t));
     function H(e, t) {
       return 0 == e[3] ? un : e[4] ? ln : an;
     }
@@ -4025,14 +4031,14 @@ var app = (function () {
             (f = w("div")),
             (m = w("div")),
             (k = w("div")),
-            (k.textContent = "Next K-💩 song in:"),
+            (k.textContent = "Next Heardle:"),
             (b = x()),
             Q(S.$$.fragment),
             (D = x()),
             (T = w("div")),
             (Y = w("div")),
             (Y.innerHTML =
-              '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n                <span class="px-1">Heardle K-💩?</span>'),
+              '<span class="text-custom-negative"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> \n                <span class="px-1">Heardle?</span>'),
             (C = x()),
             Q(O.$$.fragment),
             M(n, "class", "text-lg text-custom-line"),
@@ -4071,17 +4077,17 @@ var app = (function () {
             p(T, Y),
             p(T, C),
             ee(O, T, null),
-            (P = !0);
+            (A = !0);
         },
         p(e, n) {
-          if (((!P || 8 & n) && L !== (L = Jt[e[3]] + "") && $(r, L), 3 & n)) {
+          if (((!A || 8 & n) && L !== (L = Jt[e[3]] + "") && $(r, L), 3 & n)) {
             let t;
-            for (A = Array(e[1].maxAttempts), t = 0; t < A.length; t += 1) {
-              const r = Xt(e, A, t);
+            for (P = Array(e[1].maxAttempts), t = 0; t < P.length; t += 1) {
+              const r = Xt(e, P, t);
               N[t] ? N[t].p(r, n) : ((N[t] = on(r)), N[t].c(), N[t].m(i, null));
             }
             for (; t < N.length; t += 1) N[t].d(1);
-            N.length = A.length;
+            N.length = P.length;
           }
           I === (I = H(e)) && W
             ? W.p(e, n)
@@ -4098,17 +4104,17 @@ var app = (function () {
             d.$set(s);
         },
         i(e) {
-          P ||
+          A ||
             (Z(d.$$.fragment, e),
             Z(S.$$.fragment, e),
             Z(O.$$.fragment, e),
-            (P = !0));
+            (A = !0));
         },
         o(e) {
           q(d.$$.fragment, e),
             q(S.$$.fragment, e),
             q(O.$$.fragment, e),
-            (P = !1);
+            (A = !1);
         },
         d(e) {
           e && y(t),
@@ -4241,7 +4247,7 @@ var app = (function () {
       s = (e[0].length * e[1].attemptInterval) / 1e3 + "";
     return {
       c() {
-        (t = _("You got today's Heardle K-💩 within the first ")),
+        (t = _("You got today's Heardle within the first ")),
           (n = _(s)),
           (r = _(" seconds."));
       },
@@ -4268,7 +4274,7 @@ var app = (function () {
       a = e[1].attemptIntervalAlt[e[0].length - 1] / 1e3 > 1 ? "s" : "";
     return {
       c() {
-        (t = _("You got today's Heardle K-💩 within ")),
+        (t = _("You got today's Heardle within ")),
           (n = _(o)),
           (r = _("\n                second")),
           (s = _(a)),
@@ -4298,7 +4304,7 @@ var app = (function () {
     let n;
     return {
       c() {
-        n = _("You didn't get today's Heardle K-💩. Better luck tomorrow!");
+        n = _("You didn't get today's Heardle. Better luck tomorrow!");
       },
       m(e, t) {
         g(e, n, t);
@@ -4438,7 +4444,7 @@ var app = (function () {
         u,
         c,
         () => {
-          let e = "#Heardle Kpop #" + s.id,
+          let e = "#Heardle #" + s.id,
             t = "";
           a
             ? r.length < i.maxAttempts / 3
@@ -4455,12 +4461,13 @@ var app = (function () {
                 ? (t += "⬛️")
                 : (t += "🟥")
               : (t += "⬜️");
-          let o = e + "\n\n" + t + "\n\nhttps://heardle-kpop.glitch.me/";
+          let o = e + "\n\n" + t + "\n\nhttps://heardle.app";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
               navigator.userAgent
-            )
+            ) ||
+            /Firefox/i.test(navigator.userAgent)
           )
             return navigator &&
               navigator.clipboard &&
@@ -4540,7 +4547,7 @@ var app = (function () {
           (t = w("div")),
             (n = w("div")),
             (n.innerHTML =
-              '<div class="mr-4 w-8 text-custom-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7"><circle cx="5.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="15.5" r="2.5"></circle><path d="M8 17V5l12-2v12"></path></svg></div> \n        <div><p>Listen to the intro, then find the correct K-Pop artist &amp; title in the list.</p></div>'),
+              '<div class="mr-4 w-8 text-custom-line"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7"><circle cx="5.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="15.5" r="2.5"></circle><path d="M8 17V5l12-2v12"></path></svg></div> \n        <div><p>Listen to the intro, then find the correct artist &amp; title in the list.</p></div>'),
             (r = x()),
             (s = w("div")),
             (s.innerHTML =
@@ -4643,16 +4650,16 @@ var app = (function () {
       Y,
       C,
       O,
-      P,
-      L,
       A,
+      L,
+      P,
       N,
       H,
       I,
       W,
       R,
-      F,
       G,
+      F,
       E,
       j,
       B = (e[6] > 0 ? ((e[8] / e[6]) * 100).toFixed(1) : 0) + "",
@@ -4689,17 +4696,17 @@ var app = (function () {
           (C = w("div")),
           (C.textContent = "Win rate"),
           (O = x()),
-          (P = w("div")),
-          (L = w("div")),
           (A = w("div")),
+          (L = w("div")),
+          (P = w("div")),
           (N = _(z)),
           (H = x()),
           (I = w("div")),
           (I.textContent = "Current Streak"),
           (W = x()),
           (R = w("div")),
-          (F = w("div")),
-          (G = _(U)),
+          (G = w("div")),
+          (F = _(U)),
           (E = x()),
           (j = w("div")),
           (j.textContent = "Max Streak"),
@@ -4714,13 +4721,13 @@ var app = (function () {
           M(C, "class", "text-custom-line text-sm"),
           M(b, "class", "flex-1"),
           M(r, "class", "flex justify-between text-center w-full py-3"),
-          M(A, "class", "text-xl font-semibold"),
+          M(P, "class", "text-xl font-semibold"),
           M(I, "class", "text-custom-line text-sm"),
           M(L, "class", "flex-1"),
-          M(F, "class", "text-xl font-semibold"),
+          M(G, "class", "text-xl font-semibold"),
           M(j, "class", "text-custom-line text-sm"),
           M(R, "class", "flex-1"),
-          M(P, "class", "flex justify-between text-center w-full py-3 pt-0");
+          M(A, "class", "flex justify-between text-center w-full py-3 pt-0");
       },
       m(e, y) {
         g(e, t, y);
@@ -4746,16 +4753,16 @@ var app = (function () {
           p(b, Y),
           p(b, C),
           g(e, O, y),
-          g(e, P, y),
-          p(P, L),
-          p(L, A),
-          p(A, N),
+          g(e, A, y),
+          p(A, L),
+          p(L, P),
+          p(P, N),
           p(L, H),
           p(L, I),
-          p(P, W),
-          p(P, R),
-          p(R, F),
-          p(F, G),
+          p(A, W),
+          p(A, R),
+          p(R, G),
+          p(G, F),
           p(R, E),
           p(R, j);
       },
@@ -4776,10 +4783,10 @@ var app = (function () {
               (B = (e[6] > 0 ? ((e[8] / e[6]) * 100).toFixed(1) : 0) + "") &&
             $(D, B),
           128 & n && z !== (z = e[7].slice(-1)[0] + "") && $(N, z),
-          128 & n && U !== (U = Math.max(...e[7]) + "") && $(G, U);
+          128 & n && U !== (U = Math.max(...e[7]) + "") && $(F, U);
       },
       d(e) {
-        e && y(t), v(J, e), e && y(n), e && y(r), e && y(O), e && y(P);
+        e && y(t), v(J, e), e && y(n), e && y(r), e && y(O), e && y(A);
       },
     };
   }
@@ -5265,7 +5272,7 @@ var app = (function () {
         for (n in e) a(e, n) && !a(t, n) && o(e[n]) && (r[n] = f({}, r[n]));
         return r;
       }
-      function P(e) {
+      function A(e) {
         null != e && this.set(e);
       }
       (r.suppressDeprecationWarnings = !1),
@@ -5286,7 +5293,7 @@ var app = (function () {
         lastWeek: "[Last] dddd [at] LT",
         sameElse: "L",
       };
-      function A(e, t, n) {
+      function P(e, t, n) {
         var r = this._calendar[e] || this._calendar.sameElse;
         return Y(r) ? r.call(t, n) : r;
       }
@@ -5304,7 +5311,7 @@ var app = (function () {
         I = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,
         W = {},
         R = {};
-      function F(e, t, n, r) {
+      function G(e, t, n, r) {
         var s = r;
         "string" == typeof r &&
           (s = function () {
@@ -5320,7 +5327,7 @@ var app = (function () {
               return this.localeData().ordinal(s.apply(this, arguments), e);
             });
       }
-      function G(e) {
+      function F(e) {
         return e.match(/\[[\s\S]/)
           ? e.replace(/^\[|\]$/g, "")
           : e.replace(/\\/g, "");
@@ -5330,7 +5337,7 @@ var app = (function () {
           n,
           r = e.match(H);
         for (t = 0, n = r.length; t < n; t++)
-          R[r[t]] ? (r[t] = R[r[t]]) : (r[t] = G(r[t]));
+          R[r[t]] ? (r[t] = R[r[t]]) : (r[t] = F(r[t]));
         return function (t) {
           var s,
             i = "";
@@ -5508,10 +5515,10 @@ var app = (function () {
         Ye = /[+-]?\d+/,
         Ce = /Z|[+-]\d\d:?\d\d/gi,
         Oe = /Z|[+-]\d\d(?::?\d\d)?/gi,
-        Pe = /[+-]?\d+(\.\d{1,3})?/,
+        Ae = /[+-]?\d+(\.\d{1,3})?/,
         Le =
           /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
-      function Ae(e, t, n) {
+      function Pe(e, t, n) {
         ge[e] = Y(t)
           ? t
           : function (e, r) {
@@ -5553,12 +5560,12 @@ var app = (function () {
         )
           We[e[n]] = r;
       }
-      function Fe(e, t) {
+      function Ge(e, t) {
         Re(e, function (e, n, r, s) {
           (r._w = r._w || {}), t(e, r._w, r, s);
         });
       }
-      function Ge(e, t, n) {
+      function Fe(e, t, n) {
         null != t && a(We, e) && We[e](t, n._a, n, e);
       }
       var Ee,
@@ -5588,23 +5595,23 @@ var app = (function () {
             for (t = 0; t < this.length; ++t) if (this[t] === e) return t;
             return -1;
           }),
-        F("M", ["MM", 2], "Mo", function () {
+        G("M", ["MM", 2], "Mo", function () {
           return this.month() + 1;
         }),
-        F("MMM", 0, 0, function (e) {
+        G("MMM", 0, 0, function (e) {
           return this.localeData().monthsShort(this, e);
         }),
-        F("MMMM", 0, 0, function (e) {
+        G("MMMM", 0, 0, function (e) {
           return this.localeData().months(this, e);
         }),
         ne("month", "M"),
         oe("month", 8),
-        Ae("M", xe),
-        Ae("MM", xe, ve),
-        Ae("MMM", function (e, t) {
+        Pe("M", xe),
+        Pe("MM", xe, ve),
+        Pe("MMM", function (e, t) {
           return t.monthsShortRegex(e);
         }),
-        Ae("MMMM", function (e, t) {
+        Pe("MMMM", function (e, t) {
           return t.monthsRegex(e);
         }),
         Re(["M", "MM"], function (e, t) {
@@ -5785,23 +5792,23 @@ var app = (function () {
       function pt(e) {
         return le(e) ? 366 : 365;
       }
-      F("Y", 0, 0, function () {
+      G("Y", 0, 0, function () {
         var e = this.year();
         return e <= 9999 ? N(e, 4) : "+" + e;
       }),
-        F(0, ["YY", 2], 0, function () {
+        G(0, ["YY", 2], 0, function () {
           return this.year() % 100;
         }),
-        F(0, ["YYYY", 4], 0, "year"),
-        F(0, ["YYYYY", 5], 0, "year"),
-        F(0, ["YYYYYY", 6, !0], 0, "year"),
+        G(0, ["YYYY", 4], 0, "year"),
+        G(0, ["YYYYY", 5], 0, "year"),
+        G(0, ["YYYYYY", 6, !0], 0, "year"),
         ne("year", "y"),
         oe("year", 1),
-        Ae("Y", Ye),
-        Ae("YY", xe, ve),
-        Ae("YYYY", $e, ke),
-        Ae("YYYYY", De, _e),
-        Ae("YYYYYY", De, _e),
+        Pe("Y", Ye),
+        Pe("YY", xe, ve),
+        Pe("YYYY", $e, ke),
+        Pe("YYYYY", De, _e),
+        Pe("YYYYYY", De, _e),
         Re(["YYYYY", "YYYYYY"], je),
         Re("YYYY", function (e, t) {
           t[je] = 2 === e.length ? r.parseTwoDigitYear(e) : ce(e);
@@ -5885,17 +5892,17 @@ var app = (function () {
       function Mt(e) {
         return bt(e, this._week.dow, this._week.doy).week;
       }
-      F("w", ["ww", 2], "wo", "week"),
-        F("W", ["WW", 2], "Wo", "isoWeek"),
+      G("w", ["ww", 2], "wo", "week"),
+        G("W", ["WW", 2], "Wo", "isoWeek"),
         ne("week", "w"),
         ne("isoWeek", "W"),
         oe("week", 5),
         oe("isoWeek", 5),
-        Ae("w", xe),
-        Ae("ww", xe, ve),
-        Ae("W", xe),
-        Ae("WW", xe, ve),
-        Fe(["w", "ww", "W", "WW"], function (e, t, n, r) {
+        Pe("w", xe),
+        Pe("ww", xe, ve),
+        Pe("W", xe),
+        Pe("WW", xe, ve),
+        Ge(["w", "ww", "W", "WW"], function (e, t, n, r) {
           t[r.substr(0, 1)] = ce(e);
         });
       var $t = {
@@ -5925,7 +5932,7 @@ var app = (function () {
             : null
           : parseInt(e, 10);
       }
-      function Pt(e, t) {
+      function At(e, t) {
         return "string" == typeof e
           ? t.weekdaysParse(e) % 7 || 7
           : isNaN(e)
@@ -5935,44 +5942,44 @@ var app = (function () {
       function Lt(e, t) {
         return e.slice(t, 7).concat(e.slice(0, t));
       }
-      F("d", 0, "do", "day"),
-        F("dd", 0, 0, function (e) {
+      G("d", 0, "do", "day"),
+        G("dd", 0, 0, function (e) {
           return this.localeData().weekdaysMin(this, e);
         }),
-        F("ddd", 0, 0, function (e) {
+        G("ddd", 0, 0, function (e) {
           return this.localeData().weekdaysShort(this, e);
         }),
-        F("dddd", 0, 0, function (e) {
+        G("dddd", 0, 0, function (e) {
           return this.localeData().weekdays(this, e);
         }),
-        F("e", 0, 0, "weekday"),
-        F("E", 0, 0, "isoWeekday"),
+        G("e", 0, 0, "weekday"),
+        G("E", 0, 0, "isoWeekday"),
         ne("day", "d"),
         ne("weekday", "e"),
         ne("isoWeekday", "E"),
         oe("day", 11),
         oe("weekday", 11),
         oe("isoWeekday", 11),
-        Ae("d", xe),
-        Ae("e", xe),
-        Ae("E", xe),
-        Ae("dd", function (e, t) {
+        Pe("d", xe),
+        Pe("e", xe),
+        Pe("E", xe),
+        Pe("dd", function (e, t) {
           return t.weekdaysMinRegex(e);
         }),
-        Ae("ddd", function (e, t) {
+        Pe("ddd", function (e, t) {
           return t.weekdaysShortRegex(e);
         }),
-        Ae("dddd", function (e, t) {
+        Pe("dddd", function (e, t) {
           return t.weekdaysRegex(e);
         }),
-        Fe(["dd", "ddd", "dddd"], function (e, t, n, r) {
+        Ge(["dd", "ddd", "dddd"], function (e, t, n, r) {
           var s = n._locale.weekdaysParse(e, r, n._strict);
           null != s ? (t.d = s) : (g(n).invalidWeekday = e);
         }),
-        Fe(["d", "e", "E"], function (e, t, n, r) {
+        Ge(["d", "e", "E"], function (e, t, n, r) {
           t[r] = ce(e);
         });
-      var At = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+      var Pt = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
           "_"
         ),
         Nt = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
@@ -5980,7 +5987,7 @@ var app = (function () {
         It = Le,
         Wt = Le,
         Rt = Le;
-      function Ft(e, t) {
+      function Gt(e, t) {
         var n = i(this._weekdays)
           ? this._weekdays
           : this._weekdays[
@@ -5990,7 +5997,7 @@ var app = (function () {
             ];
         return !0 === e ? Lt(n, this._week.dow) : e ? n[e.day()] : n;
       }
-      function Gt(e) {
+      function Ft(e) {
         return !0 === e
           ? Lt(this._weekdaysShort, this._week.dow)
           : e
@@ -6122,7 +6129,7 @@ var app = (function () {
       function Vt(e) {
         if (!this.isValid()) return null != e ? this : NaN;
         if (null != e) {
-          var t = Pt(e, this.localeData());
+          var t = At(e, this.localeData());
           return this.day(this.day() % 7 ? t : t - 7);
         }
         return this.day() || 7;
@@ -6205,7 +6212,7 @@ var app = (function () {
         return this.hours() || 24;
       }
       function en(e, t) {
-        F(e, 0, 0, function () {
+        G(e, 0, 0, function () {
           return this.localeData().meridiem(this.hours(), this.minutes(), t);
         });
       }
@@ -6215,21 +6222,21 @@ var app = (function () {
       function nn(e) {
         return "p" === (e + "").toLowerCase().charAt(0);
       }
-      F("H", ["HH", 2], 0, "hour"),
-        F("h", ["hh", 2], 0, Xt),
-        F("k", ["kk", 2], 0, Qt),
-        F("hmm", 0, 0, function () {
+      G("H", ["HH", 2], 0, "hour"),
+        G("h", ["hh", 2], 0, Xt),
+        G("k", ["kk", 2], 0, Qt),
+        G("hmm", 0, 0, function () {
           return "" + Xt.apply(this) + N(this.minutes(), 2);
         }),
-        F("hmmss", 0, 0, function () {
+        G("hmmss", 0, 0, function () {
           return (
             "" + Xt.apply(this) + N(this.minutes(), 2) + N(this.seconds(), 2)
           );
         }),
-        F("Hmm", 0, 0, function () {
+        G("Hmm", 0, 0, function () {
           return "" + this.hours() + N(this.minutes(), 2);
         }),
-        F("Hmmss", 0, 0, function () {
+        G("Hmmss", 0, 0, function () {
           return (
             "" + this.hours() + N(this.minutes(), 2) + N(this.seconds(), 2)
           );
@@ -6238,18 +6245,18 @@ var app = (function () {
         en("A", !1),
         ne("hour", "h"),
         oe("hour", 13),
-        Ae("a", tn),
-        Ae("A", tn),
-        Ae("H", xe),
-        Ae("h", xe),
-        Ae("k", xe),
-        Ae("HH", xe, ve),
-        Ae("hh", xe, ve),
-        Ae("kk", xe, ve),
-        Ae("hmm", be),
-        Ae("hmmss", Se),
-        Ae("Hmm", be),
-        Ae("Hmmss", Se),
+        Pe("a", tn),
+        Pe("A", tn),
+        Pe("H", xe),
+        Pe("h", xe),
+        Pe("k", xe),
+        Pe("HH", xe, ve),
+        Pe("hh", xe, ve),
+        Pe("kk", xe, ve),
+        Pe("hmm", be),
+        Pe("hmmss", Se),
+        Pe("Hmm", be),
+        Pe("Hmmss", Se),
         Re(["H", "HH"], Ue),
         Re(["k", "kk"], function (e, t, n) {
           var r = ce(e);
@@ -6302,7 +6309,7 @@ var app = (function () {
           months: et,
           monthsShort: tt,
           week: $t,
-          weekdays: At,
+          weekdays: Pt,
           weekdaysMin: Ht,
           weekdaysShort: Nt,
           meridiemParse: rn,
@@ -6383,7 +6390,7 @@ var app = (function () {
               r = n._config;
             }
           return (
-            (un[e] = new P(O(r, t))),
+            (un[e] = new A(O(r, t))),
             cn[e] &&
               cn[e].forEach(function (e) {
                 gn(e.name, e.config);
@@ -6404,7 +6411,7 @@ var app = (function () {
             : (null != (r = mn(e)) && (s = r._config),
               (t = O(s, t)),
               null == r && (t.abbr = e),
-              ((n = new P(t)).parentLocale = un[e]),
+              ((n = new A(t)).parentLocale = un[e]),
               (un[e] = n)),
             pn(e);
         } else
@@ -6531,7 +6538,7 @@ var app = (function () {
             if (!bn.exec(l[4])) return void (e._isValid = !1);
             o = "Z";
           }
-          (e._f = s + (i || "") + (o || "")), Gn(e);
+          (e._f = s + (i || "") + (o || "")), Fn(e);
         } else e._isValid = !1;
       }
       function Cn(e, t, n, r, s, i) {
@@ -6548,7 +6555,7 @@ var app = (function () {
         var t = parseInt(e, 10);
         return t <= 49 ? 2e3 + t : t <= 999 ? 1900 + t : t;
       }
-      function Pn(e) {
+      function An(e) {
         return e
           .replace(/\([^)]*\)|[\n\t]/g, " ")
           .replace(/(\s\s+)/g, " ")
@@ -6562,7 +6569,7 @@ var app = (function () {
           ((g(n).weekdayMismatch = !0), (n._isValid = !1), !1)
         );
       }
-      function An(e, t, n) {
+      function Pn(e, t, n) {
         if (e) return Tn[e];
         if (t) return 0;
         var r = parseInt(n, 10),
@@ -6571,12 +6578,12 @@ var app = (function () {
       }
       function Nn(e) {
         var t,
-          n = Dn.exec(Pn(e._i));
+          n = Dn.exec(An(e._i));
         if (n) {
           if (((t = Cn(n[4], n[3], n[2], n[5], n[6], n[7])), !Ln(n[1], t, e)))
             return;
           (e._a = t),
-            (e._tzm = An(n[8], n[9], n[10])),
+            (e._tzm = Pn(n[8], n[9], n[10])),
             (e._d = kt.apply(null, e._a)),
             e._d.setUTCMinutes(e._d.getUTCMinutes() - e._tzm),
             (g(e).rfc2822 = !0);
@@ -6613,7 +6620,7 @@ var app = (function () {
         if (!e._d) {
           for (
             r = Wn(e),
-              e._w && null == e._a[ze] && null == e._a[Be] && Fn(e),
+              e._w && null == e._a[ze] && null == e._a[Be] && Gn(e),
               null != e._dayOfYear &&
                 ((i = In(e._a[je], r[je])),
                 (e._dayOfYear > pt(i) || 0 === e._dayOfYear) &&
@@ -6643,7 +6650,7 @@ var app = (function () {
               (g(e).weekdayMismatch = !0);
         }
       }
-      function Fn(e) {
+      function Gn(e) {
         var t, n, r, s, i, o, a, l, u;
         null != (t = e._w).GG || null != t.W || null != t.E
           ? ((i = 1),
@@ -6669,7 +6676,7 @@ var app = (function () {
               (e._a[je] = a.year),
               (e._dayOfYear = a.dayOfYear));
       }
-      function Gn(e) {
+      function Fn(e) {
         if (e._f !== r.ISO_8601)
           if (e._f !== r.RFC_2822) {
             (e._a = []), (g(e).empty = !0);
@@ -6695,7 +6702,7 @@ var app = (function () {
                   (c += n.length)),
                 R[i]
                   ? (n ? (g(e).empty = !1) : g(e).unusedTokens.push(i),
-                    Ge(i, n, e))
+                    Fe(i, n, e))
                   : e._strict && !n && g(e).unusedTokens.push(i);
             (g(e).charsLeftOver = u - c),
               l.length > 0 && g(e).unusedInput.push(l),
@@ -6741,7 +6748,7 @@ var app = (function () {
             (t = _({}, e)),
             null != e._useUTC && (t._useUTC = e._useUTC),
             (t._f = e._f[s]),
-            Gn(t),
+            Fn(t),
             y(t) && (o = !0),
             (i += g(t).charsLeftOver),
             (i += 10 * g(t).unusedTokens.length),
@@ -6780,7 +6787,7 @@ var app = (function () {
             : ("string" == typeof t && (e._i = t = e._locale.preparse(t)),
               b(t)
                 ? new x(kn(t))
-                : (d(t) ? (e._d = t) : i(n) ? jn(e) : n ? Gn(e) : Vn(e),
+                : (d(t) ? (e._d = t) : i(n) ? jn(e) : n ? Fn(e) : Vn(e),
                   y(e) || (e._d = null),
                   e))
         );
@@ -6929,7 +6936,7 @@ var app = (function () {
         return o + i;
       }
       function cr(e, t) {
-        F(e, 0, 0, function () {
+        G(e, 0, 0, function () {
           var e = this.utcOffset(),
             n = "+";
           return (
@@ -6940,8 +6947,8 @@ var app = (function () {
       }
       cr("Z", ":"),
         cr("ZZ", ""),
-        Ae("Z", Oe),
-        Ae("ZZ", Oe),
+        Pe("Z", Oe),
+        Pe("ZZ", Oe),
         Re(["Z", "ZZ"], function (e, t, n) {
           (n._useUTC = !0), (n._tzm = hr(Oe, e));
         });
@@ -7144,7 +7151,7 @@ var app = (function () {
               months: 0,
             };
       }
-      function Pr(e, t) {
+      function Ar(e, t) {
         return function (n, r) {
           var s;
           return (
@@ -7178,8 +7185,8 @@ var app = (function () {
           s && r.updateOffset(e, o || a));
       }
       (Tr.fn = or.prototype), (Tr.invalid = ir);
-      var Ar = Pr(1, "add"),
-        Nr = Pr(-1, "subtract");
+      var Pr = Ar(1, "add"),
+        Nr = Ar(-1, "subtract");
       function Hr(e) {
         return "string" == typeof e || e instanceof String;
       }
@@ -7233,7 +7240,7 @@ var app = (function () {
           t && n
         );
       }
-      function Fr(e) {
+      function Gr(e) {
         var t,
           n,
           r = o(e) && !l(e),
@@ -7249,7 +7256,7 @@ var app = (function () {
         for (t = 0; t < i.length; t += 1) (n = i[t]), (s = s || a(e, n));
         return r && s;
       }
-      function Gr(e, t) {
+      function Fr(e, t) {
         var n = e.diff(t, "days", !0);
         return n < -6
           ? "sameElse"
@@ -7270,7 +7277,7 @@ var app = (function () {
           (arguments[0]
             ? Ir(arguments[0])
               ? ((e = arguments[0]), (t = void 0))
-              : Fr(arguments[0]) && ((t = arguments[0]), (e = void 0))
+              : Gr(arguments[0]) && ((t = arguments[0]), (e = void 0))
             : ((e = void 0), (t = void 0)));
         var n = e || Kn(),
           s = fr(n, this).startOf("day"),
@@ -7693,7 +7700,7 @@ var app = (function () {
         }
         return "";
       }
-      function Ps() {
+      function As() {
         var e,
           t,
           n,
@@ -7723,7 +7730,7 @@ var app = (function () {
         }
         return "";
       }
-      function As() {
+      function Ps() {
         var e,
           t,
           n,
@@ -7763,10 +7770,10 @@ var app = (function () {
       function Rs(e, t) {
         return t.erasNameRegex(e);
       }
-      function Fs(e, t) {
+      function Gs(e, t) {
         return t.erasNarrowRegex(e);
       }
-      function Gs(e, t) {
+      function Fs(e, t) {
         return t._eraYearOrdinalRegex || Te;
       }
       function Es() {
@@ -7790,7 +7797,7 @@ var app = (function () {
           (this._erasNarrowRegex = new RegExp("^(" + s.join("|") + ")", "i"));
       }
       function js(e, t) {
-        F(0, [e, e.length], 0, t);
+        G(0, [e, e.length], 0, t);
       }
       function Bs(e) {
         return Zs.call(
@@ -7840,29 +7847,29 @@ var app = (function () {
           ? Math.ceil((this.month() + 1) / 3)
           : this.month(3 * (e - 1) + (this.month() % 3));
       }
-      F("N", 0, 0, "eraAbbr"),
-        F("NN", 0, 0, "eraAbbr"),
-        F("NNN", 0, 0, "eraAbbr"),
-        F("NNNN", 0, 0, "eraName"),
-        F("NNNNN", 0, 0, "eraNarrow"),
-        F("y", ["y", 1], "yo", "eraYear"),
-        F("y", ["yy", 2], 0, "eraYear"),
-        F("y", ["yyy", 3], 0, "eraYear"),
-        F("y", ["yyyy", 4], 0, "eraYear"),
-        Ae("N", Ws),
-        Ae("NN", Ws),
-        Ae("NNN", Ws),
-        Ae("NNNN", Rs),
-        Ae("NNNNN", Fs),
+      G("N", 0, 0, "eraAbbr"),
+        G("NN", 0, 0, "eraAbbr"),
+        G("NNN", 0, 0, "eraAbbr"),
+        G("NNNN", 0, 0, "eraName"),
+        G("NNNNN", 0, 0, "eraNarrow"),
+        G("y", ["y", 1], "yo", "eraYear"),
+        G("y", ["yy", 2], 0, "eraYear"),
+        G("y", ["yyy", 3], 0, "eraYear"),
+        G("y", ["yyyy", 4], 0, "eraYear"),
+        Pe("N", Ws),
+        Pe("NN", Ws),
+        Pe("NNN", Ws),
+        Pe("NNNN", Rs),
+        Pe("NNNNN", Gs),
         Re(["N", "NN", "NNN", "NNNN", "NNNNN"], function (e, t, n, r) {
           var s = n._locale.erasParse(e, r, n._strict);
           s ? (g(n).era = s) : (g(n).invalidEra = e);
         }),
-        Ae("y", Te),
-        Ae("yy", Te),
-        Ae("yyy", Te),
-        Ae("yyyy", Te),
-        Ae("yo", Gs),
+        Pe("y", Te),
+        Pe("yy", Te),
+        Pe("yyy", Te),
+        Pe("yyyy", Te),
+        Pe("yo", Fs),
         Re(["y", "yy", "yyy", "yyyy"], je),
         Re(["yo"], function (e, t, n, r) {
           var s;
@@ -7872,10 +7879,10 @@ var app = (function () {
               ? (t[je] = n._locale.eraYearOrdinalParse(e, s))
               : (t[je] = parseInt(e, 10));
         }),
-        F(0, ["gg", 2], 0, function () {
+        G(0, ["gg", 2], 0, function () {
           return this.weekYear() % 100;
         }),
-        F(0, ["GG", 2], 0, function () {
+        G(0, ["GG", 2], 0, function () {
           return this.isoWeekYear() % 100;
         }),
         js("gggg", "weekYear"),
@@ -7886,33 +7893,33 @@ var app = (function () {
         ne("isoWeekYear", "GG"),
         oe("weekYear", 1),
         oe("isoWeekYear", 1),
-        Ae("G", Ye),
-        Ae("g", Ye),
-        Ae("GG", xe, ve),
-        Ae("gg", xe, ve),
-        Ae("GGGG", $e, ke),
-        Ae("gggg", $e, ke),
-        Ae("GGGGG", De, _e),
-        Ae("ggggg", De, _e),
-        Fe(["gggg", "ggggg", "GGGG", "GGGGG"], function (e, t, n, r) {
+        Pe("G", Ye),
+        Pe("g", Ye),
+        Pe("GG", xe, ve),
+        Pe("gg", xe, ve),
+        Pe("GGGG", $e, ke),
+        Pe("gggg", $e, ke),
+        Pe("GGGGG", De, _e),
+        Pe("ggggg", De, _e),
+        Ge(["gggg", "ggggg", "GGGG", "GGGGG"], function (e, t, n, r) {
           t[r.substr(0, 2)] = ce(e);
         }),
-        Fe(["gg", "GG"], function (e, t, n, s) {
+        Ge(["gg", "GG"], function (e, t, n, s) {
           t[s] = r.parseTwoDigitYear(e);
         }),
-        F("Q", 0, "Qo", "quarter"),
+        G("Q", 0, "Qo", "quarter"),
         ne("quarter", "Q"),
         oe("quarter", 7),
-        Ae("Q", ye),
+        Pe("Q", ye),
         Re("Q", function (e, t) {
           t[Be] = 3 * (ce(e) - 1);
         }),
-        F("D", ["DD", 2], "Do", "date"),
+        G("D", ["DD", 2], "Do", "date"),
         ne("date", "D"),
         oe("date", 9),
-        Ae("D", xe),
-        Ae("DD", xe, ve),
-        Ae("Do", function (e, t) {
+        Pe("D", xe),
+        Pe("DD", xe, ve),
+        Pe("Do", function (e, t) {
           return e
             ? t._dayOfMonthOrdinalParse || t._ordinalParse
             : t._dayOfMonthOrdinalParseLenient;
@@ -7929,66 +7936,66 @@ var app = (function () {
           ) + 1;
         return null == e ? t : this.add(e - t, "d");
       }
-      F("DDD", ["DDDD", 3], "DDDo", "dayOfYear"),
+      G("DDD", ["DDDD", 3], "DDDo", "dayOfYear"),
         ne("dayOfYear", "DDD"),
         oe("dayOfYear", 4),
-        Ae("DDD", Me),
-        Ae("DDDD", we),
+        Pe("DDD", Me),
+        Pe("DDDD", we),
         Re(["DDD", "DDDD"], function (e, t, n) {
           n._dayOfYear = ce(e);
         }),
-        F("m", ["mm", 2], 0, "minute"),
+        G("m", ["mm", 2], 0, "minute"),
         ne("minute", "m"),
         oe("minute", 14),
-        Ae("m", xe),
-        Ae("mm", xe, ve),
+        Pe("m", xe),
+        Pe("mm", xe, ve),
         Re(["m", "mm"], Ve);
       var ti = de("Minutes", !1);
-      F("s", ["ss", 2], 0, "second"),
+      G("s", ["ss", 2], 0, "second"),
         ne("second", "s"),
         oe("second", 15),
-        Ae("s", xe),
-        Ae("ss", xe, ve),
+        Pe("s", xe),
+        Pe("ss", xe, ve),
         Re(["s", "ss"], Je);
       var ni,
         ri,
         si = de("Seconds", !1);
       for (
-        F("S", 0, 0, function () {
+        G("S", 0, 0, function () {
           return ~~(this.millisecond() / 100);
         }),
-          F(0, ["SS", 2], 0, function () {
+          G(0, ["SS", 2], 0, function () {
             return ~~(this.millisecond() / 10);
           }),
-          F(0, ["SSS", 3], 0, "millisecond"),
-          F(0, ["SSSS", 4], 0, function () {
+          G(0, ["SSS", 3], 0, "millisecond"),
+          G(0, ["SSSS", 4], 0, function () {
             return 10 * this.millisecond();
           }),
-          F(0, ["SSSSS", 5], 0, function () {
+          G(0, ["SSSSS", 5], 0, function () {
             return 100 * this.millisecond();
           }),
-          F(0, ["SSSSSS", 6], 0, function () {
+          G(0, ["SSSSSS", 6], 0, function () {
             return 1e3 * this.millisecond();
           }),
-          F(0, ["SSSSSSS", 7], 0, function () {
+          G(0, ["SSSSSSS", 7], 0, function () {
             return 1e4 * this.millisecond();
           }),
-          F(0, ["SSSSSSSS", 8], 0, function () {
+          G(0, ["SSSSSSSS", 8], 0, function () {
             return 1e5 * this.millisecond();
           }),
-          F(0, ["SSSSSSSSS", 9], 0, function () {
+          G(0, ["SSSSSSSSS", 9], 0, function () {
             return 1e6 * this.millisecond();
           }),
           ne("millisecond", "ms"),
           oe("millisecond", 16),
-          Ae("S", Me, ye),
-          Ae("SS", Me, ve),
-          Ae("SSS", Me, we),
+          Pe("S", Me, ye),
+          Pe("SS", Me, ve),
+          Pe("SSS", Me, we),
           ni = "SSSS";
         ni.length <= 9;
         ni += "S"
       )
-        Ae(ni, Te);
+        Pe(ni, Te);
       function ii(e, t) {
         t[Ke] = ce(1e3 * ("0." + e));
       }
@@ -8000,8 +8007,8 @@ var app = (function () {
         return this._isUTC ? "Coordinated Universal Time" : "";
       }
       (ri = de("Milliseconds", !1)),
-        F("z", 0, 0, "zoneAbbr"),
-        F("zz", 0, 0, "zoneName");
+        G("z", 0, 0, "zoneAbbr"),
+        G("zz", 0, 0, "zoneName");
       var li = x.prototype;
       function ui(e) {
         return Kn(1e3 * e);
@@ -8012,7 +8019,7 @@ var app = (function () {
       function di(e) {
         return e;
       }
-      (li.add = Ar),
+      (li.add = Pr),
         (li.calendar = Er),
         (li.clone = jr),
         (li.diff = Zr),
@@ -8056,9 +8063,9 @@ var app = (function () {
         (li.valueOf = vs),
         (li.creationData = Ds),
         (li.eraName = Os),
-        (li.eraNarrow = Ps),
+        (li.eraNarrow = As),
         (li.eraAbbr = Ls),
-        (li.eraYear = As),
+        (li.eraYear = Ps),
         (li.year = gt),
         (li.isLeapYear = yt),
         (li.weekYear = Bs),
@@ -8104,7 +8111,7 @@ var app = (function () {
           "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
           xr
         ));
-      var hi = P.prototype;
+      var hi = A.prototype;
       function fi(e, t, n, r) {
         var s = vn(),
           i = m().set(r, t);
@@ -8148,7 +8155,7 @@ var app = (function () {
       function ki(e, t, n) {
         return pi(e, t, n, "weekdaysMin");
       }
-      (hi.calendar = A),
+      (hi.calendar = P),
         (hi.longDateFormat = U),
         (hi.invalidDate = J),
         (hi.ordinal = q),
@@ -8171,9 +8178,9 @@ var app = (function () {
         (hi.week = Mt),
         (hi.firstDayOfYear = Tt),
         (hi.firstDayOfWeek = Dt),
-        (hi.weekdays = Ft),
+        (hi.weekdays = Gt),
         (hi.weekdaysMin = Et),
-        (hi.weekdaysShort = Gt),
+        (hi.weekdaysShort = Ft),
         (hi.weekdaysParse = Bt),
         (hi.weekdaysRegex = Jt),
         (hi.weekdaysShortRegex = Kt),
@@ -8338,20 +8345,20 @@ var app = (function () {
               31536e6 * ce(this._months / 12)
           : NaN;
       }
-      function Pi(e) {
+      function Ai(e) {
         return function () {
           return this.as(e);
         };
       }
-      var Li = Pi("ms"),
-        Ai = Pi("s"),
-        Ni = Pi("m"),
-        Hi = Pi("h"),
-        Ii = Pi("d"),
-        Wi = Pi("w"),
-        Ri = Pi("M"),
-        Fi = Pi("Q"),
-        Gi = Pi("y");
+      var Li = Ai("ms"),
+        Pi = Ai("s"),
+        Ni = Ai("m"),
+        Hi = Ai("h"),
+        Ii = Ai("d"),
+        Wi = Ai("w"),
+        Ri = Ai("M"),
+        Gi = Ai("Q"),
+        Fi = Ai("y");
       function Ei() {
         return Tr(this);
       }
@@ -8492,14 +8499,14 @@ var app = (function () {
         (uo.subtract = Mi),
         (uo.as = Ci),
         (uo.asMilliseconds = Li),
-        (uo.asSeconds = Ai),
+        (uo.asSeconds = Pi),
         (uo.asMinutes = Ni),
         (uo.asHours = Hi),
         (uo.asDays = Ii),
         (uo.asWeeks = Wi),
         (uo.asMonths = Ri),
-        (uo.asQuarters = Fi),
-        (uo.asYears = Gi),
+        (uo.asQuarters = Gi),
+        (uo.asYears = Fi),
         (uo.valueOf = Oi),
         (uo._bubble = Di),
         (uo.clone = Ei),
@@ -8523,10 +8530,10 @@ var app = (function () {
           lo
         )),
         (uo.lang = as),
-        F("X", 0, 0, "unix"),
-        F("x", 0, 0, "valueOf"),
-        Ae("x", Ye),
-        Ae("X", Pe),
+        G("X", 0, 0, "unix"),
+        G("x", 0, 0, "valueOf"),
+        Pe("x", Ye),
+        Pe("X", Ae),
         Re("X", function (e, t, n) {
           n._d = new Date(1e3 * parseFloat(e));
         }),
@@ -8561,7 +8568,7 @@ var app = (function () {
         (r.normalizeUnits = re),
         (r.relativeTimeRounding = ro),
         (r.relativeTimeThreshold = so),
-        (r.calendarFormat = Gr),
+        (r.calendarFormat = Fr),
         (r.prototype = li),
         (r.HTML5_FMT = {
           DATETIME_LOCAL: "YYYY-MM-DDTHH:mm",
@@ -8578,609 +8585,448 @@ var app = (function () {
       );
     })();
   });
-   const Cn = ue([
-      "2ne1 - I Am The Best",
-      "2ne1 - COME BACK HOME",
-      "2ne1 - Lonely",
-      "2ne1 - Goodbye",
-      "10cm - Drawer",
-      "10cm - But it\’s Destiny",
-      "10cm - My Eyes",
-      "10cm - Where Is Dream",
-      "aespa - Next Level",
-      "aespa - Savage",
-      "aespa - Black Mamba",
-      "aespa - Dreams Come True",
-      "aespa - Forever",
-      "aespa - Lucid Dream",
-      "AKMU - DINOSAUR",
-      "AKMU - How People Move",
-      "AKMU, IU - NAKKA",
-      "AKMU - How can I love the heartbreak, you\’re the one I love",
-      "AKMU - 200%",
-      "AKMU - Give Love",
-      "AKMU - Be With You",
-      "AKMU - Last Goodbye",
-      "AOA - Come See Me",
-      "AOA - Excuse Me",
-      "AOA - Bingle Bangle",
-      "AOA - Like a Cat",
-      "AOA - Miniskirt",
-      "AOA - Heart Attack",
-      "Apink - %% (Eung Eung)",
-      "Apink - I\’m so sick",
-      "Apink - Dilemma",
-      "Apink - Dumhdurum",
-      "Apink - Mr. Chu",
-      "Apink - NoNoNo",
-      "ATEEZ - Answer",
-      "ATEEZ - Wave",
-      "ATEEZ - Deja Vu",
-      "ATEEZ - Fireworks (I\’m The One)",
-      "ATEEZ - Say My Name",
-      "Baekhyun - Candy",
-      "Baekhyun - UN Village",
-      "Baekhyun - Bambi",
-      "BIBI - KAZINO",
-      "BIBI - The Weekend",
-      "BIGBANG - BANG BANG BANG",
-      "BIGBANG - LOSER",
-      "BIGBANG - IF YOU",
-      "BIGBANG - FXXK IT",
-      "BIGBANG - FANTASTIC BABY",
-      "BIGBANG - Haru Haru",
-      "BIGBANG - LAST DANCE",
-      "BIGBANG - BAE BAE",
-      "BLACKPINK - Lovesick Girls",
-      "BLACKPINK - You Never Know",
-      "BLACKPINK - As If It\’s Your Last",
-      "BLACKPINK - Don\’t Know What To Do",
-      "BLACKPINK - Forever Young",
-      "BLACKPINK - Kill This Love",
-      "BLACKPINK - DDU-DU DDU-DU",
-      "BLACKPINK - PLAYING WITH FIRE",
-      "BOL4 - X Song",
-      "BOL4 - Bom",
-      "BOL4 - Some",
-      "BOL4 - Workaholic",
-      "BOL4 - To My Youth",
-      "BOL4 - Travel",
-      "BOL4 - Lonely",
-      "BOL4 - You(=i)",
-      "BOL4 - Galaxy",
-      "BOL4 - #First Love",
-      "BOL4 - Love Letter",
-      "Brave Girls - Rollin’", 
-      "Brave Girls - Chi Mat Ba Ram",
-      "Brave Girls - Thank You",
-      "Brave Girls - We Ride",
-      "Brave Girls - After We Ride",
-      "BTOB - Missing You",
-      "BTOB - It\’s Okay",
-      "BTS - Spring Day",
-      "BTS - FAKE LOVE",
-      "BTS - Blood Sweat & Tears",
-      "BTS - Boy With Luv",
-      "BTS - Life Goes On",
-      "BTS - IDOL",
-      "BTS - MIC DROP",
-      "BTS - DNA",
-      "BTS - Stay Gold",
-      "BTS - Dynamite",
-      "BTS - Dope",
-      "Chungha, R3HAB - Dream of You",
-      "Chungha, Changmo - Play",
-      "Chungha - Gotta Go",
-      "Chungha - Roller Coaster",
-      "Chungha - Snapping",
-      "Chungha, Seulgi, SinB, Soyeon - Wow Thing",
-      "Chungha - Bicycle",
-      "Chungha - Stay Tonight",
-      "CL - Tie a Cherry",
-      "CL -+5 Star+",
-      "CLC - Devil",
-      "CLC - Black Dress",
-      "CLC - HELICOPTER",
-      "CLC - ME",
-      "CLC - SHOW",
-      "CLC - Like It",
-      "Crush - Beautiful",
-      "DAWN - Money",
-      "DAWN - DAWNDIDIDAWN",
-      "DAY6 - I Loved You",
-      "DAY6 - Congratulations",
-      "DAY6 - Zombie",
-      "DAY6 - 예뻤어 You Were Beautiful",
-      "DEAN - instagram",
-      "DEAN - D (Half Moon)",
-      "DEAN - I\’m Not Sorry",
-      "DEAN - What 2 Do",
-      "DEAN - Bonnie & Clyde",
-      "DPR LIVE - Jasmine",
-      "DPR LIVE - Text Me",
-      "DPR LIVE - Martini Blue",
-      "DPR LIVE - Jam & Butterfly",
-      "DPR LIVE - KISS ME",
-      "Dreamcatcher - BOCA",
-      "Dreamcatcher - YOU AND I",
-      "Dreamcatcher - Scream",
-      "Dreamcatcher - BEcause",
-      "Dreamcatcher - Red Sun",
-      "Dreamcatcher - Odd Eye",
-      "ENHYPEN - Drunk-Dazed",
-      "ENHYPEN - Polaroid Love",
-      "ENHYPEN - Blessed-Cursed",
-      "ENHYPEN - Tamed-Dashed",
-      "Epik High, Colde - Rain Song",
-      "Epik High, Yuna - No Different",
-      "Epik High, Younha - Gray So Gray",
-      "Epik High, LeeHi - Rich Kids Anthem",
-      "Eric Nam - Runaway",
-      "EVERGLOW - Hush",
-      "EVERGLOW - LA DI DA",
-      "EVERGLOW - Bon Bon Chocolat",
-      "EVERGLOW - Don\’t Speak",
-      "EVERGLOW - NO LIE",
-      "EVERGLOW - Adios",
-      "EVERGLOW - Pirate",
-      "EVERGLOW - Dun Dun",
-      "EXID - Ah Yeah",
-      "EXID - Me & You",
-      "EXID - I Love You",
-      "EXID - Up & Down",
-      "EXO - Growl",
-      "EXO - Love Shot",
-      "EXO - Monster",
-      "EXO - Ko Ko Bop",
-      "EXO - Lotto",
-      "EXO - Tempo",
-      "EXO - Obsession",
-      "EXO - CALL ME BABY",
-      "fromis_9 - LOVE BOMB",
-      "fromis_9 - DM",
-      "fromis_9 - WE GO",
-      "fromis_9 - FUN!",
-      "f(x) - 4 Walls",
-      "f(x) - Electric Shock",
-      "f(x) - Hot Summer",
-      "f(x) - Rum Pum Pum Pum",
-      "Gaho - Start Over",
-      "Gaho - Running",
-      "GFRIEND - MAGO",
-      "GFRIEND - Fever",
-      "GFRIEND - Me Gustas Tu",
-      "GFRIEND - Glass Bead",
-      "GFRIEND - Rough",
-      "GFRIEND - Sunrise",
-      "GFRIEND - Time for the moon night",
-      "G I-DLE - Latata",
-      "G I-DLE - Hann (Alone)",
-      "G I-DLE - HWAA",
-      "G I-DLE - Senorita",
-      "G I-DLE - Lion",
-      "G I-DLE - Uh-Oh",
-      "G I-DLE - TOMBOY",
-      "G I-DLE - DUMDi DUMDi",
-      "G I-DLE - Oh my god",
-      "G I-DLE - i\’M THE TREND",
-      "Girls\’ Generation (SNSD) - GEE",
-      "Girls\’ Generation (SNSD) - Run Devil Run",
-      "Girls\’ Generation (SNSD) - Into the New World",
-      "Girls\’ Generation (SNSD) - Lion Heart",
-      "Girls\’ Generation (SNSD) - I GOT A BOY",
-      "Girls\’ Generation (SNSD) - Mr.Mr.",
-      "Girls\’ Generation (SNSD) - Party",
-      "HEIZE - Star",
-      "HEIZE - You, Clouds, Rain",
-      "HEIZE - And July",
-      "Highlight - NOT THE END",
-      "Highlight - Plz Don\’t Be Sad",
-      "Highlight - Loved",
-      "Hwasa - Maria",
-      "Hwasa - TWIT",
-      "HyunA - Bubble Pop",
-      "HyunA - I\’m Not Cool",
-      "Hyuna - Lip & Hip",
-      "Hyuna - BABE",
-      "iKON - LOVE SCENARIO",
-      "iKON - KILLING ME",
-      "iKON - Why Why Why",
-      "iKON - Dive",
-      "iKON - I\’M OK",
-      "I.O.I - Very Very Very",
-      "I.O.I - DOWNPOUR",
-      "I.O.I - Whatta Man (Good man)",
-      "ITZY - Wannabe",
-      "ITZY - ICY",
-      "ITZY - Not Shy",
-      "ITZY - In the morning",
-      "ITZY - LOCO",
-      "ITZY - SWIPE",
-      "ITZY - WANT IT?",
-      "ITZY - THAT\’S A NO NO",
-      "IU - Celebrity",
-      "IU - Lilac",
-      "IU - BBIBBI",
-      "IU - Ending Scene",
-      "IU - Strawberry Moon",
-      "IU - Through The Night",
-      "IU, G-Dragon - Palette",
-      "IU, Suga - eight",
-      "IU - Drama",
-      "IU - Love Poem",
-      "IVE - ELEVEN",
-      "IZ*ONE - Airplane",
-      "IZ*ONE - La Vie en Rose",
-      "IZ*ONE - Secret Story of the Swan",
-      "IZ*ONE - FIESTA",
-      "IZ*ONE - Highlight",
-      "IZ*ONE - Panorama",
-      "IZ*ONE - Violeta",
-      "Jay Park, Hoody, Loco - All I Wanna Do (K)",
-      "Jay Park - MOMMAE",
-      "Jay Park, IU - GANADARA",
-      "Jay Park, GRAY - DRIVE",
-      "Jay Park, Kim Petras - Unlock it (Lock It)",
-      "Jay Park - Me Like Yuh",
-      "JOY - Hello",
-      "JUNNY - Thank You",
-      "JUNNY - By My Side",
-      "JUNNY - nostalgia",
-      "Kai - Mmmh",
-      "Kai - Peaches",
-      "KEY, Soyeon - I Wanna Be",
-      "LABOUM - Between Us",
-      "LABOUM - Journey to Atlantis",
-      "LeeHi - Holo",
-      "LeeHi - NO ONE",
-      "LeeHi - For You",
-      "LeeHi - BREATHE",
-      "LOONA - PTT (Paint The Town)",
-      "LOONA - Egoist (Olivia Hye)",
-      "LOONA - Heart Attack",
-      "LOONA - Hi High",
-      "LOONA - Butterfly",
-      "LOONA - Why Not?",
-      "LOONA - So What",
-      "LOONA - HULA HOOP",
-      "LOOΠΔ / ODD EYE CIRCLE - Girl Front",
-      "Lovelyz - Now, We",
-      "Lovelyz - That day",
-      "Lovelyz - Ah-Choo",
-      "Lovelyz - Obliviate",
-      "Lovelyz - Destiny",
-      "Hoody - Adios",
-      "Mamamoo - HIP",
-      "Mamamoo - Egotistic",
-      "Mamamoo - Dingga",
-      "Mamamoo - Starry Night",
-      "Mamamoo - Wind flower",
-      "Mamamoo - Waggy",
-      "Mamamoo - AYA",
-      "Mamamoo - Decalcomanie",
-      "MCND - ICE AGE",
-      "MCND - Crush",
-      "MCND - Spring",
-      "MOMOLAND - BAAM",
-      "MOMOLAND - BBoom BBoom",
-      "MOMOLAND - I\’m So Hot",
-      "MOMOLAND - Wrap Me In Plastic",
-      "MOMOLAND - Thumbs Up",
-      "Monsta X - Shoot Out",
-      "Monsta X - Love Killa",
-      "Monsta X - SOMEONE\’S SOMEONE",
-      "Monsta X - MIDDLE OF THE NIGHT",
-      "Monsta X, French Montana - WHO DO U LOVE?",
-      "Monsta X, Steve Aoki - Play It Cool",
-      "NCT DREAM - BOOM",
-      "NCT DREAM - Hot Sauce",
-      "NCT DREAM - Hello Future",
-      "NCT DREAM - Ridin\’",
-      "NCT DREAM - GO",
-      "NCT U - Make A Wish (Birthday Song)",
-      "NCT U - Universe (Let\’s Play Ball)",
-      "NCT U - 90\’s Love",
-      "NCT U - The 7th Sense",
-      "NCT U - Misfit",
-      "NCT 127 - Kick It",
-      "NCT 127 - Favorite (Vampire)",
-      "NCT 127 - Regular",
-      "NCT 127 - Sticker",
-      "NCT 127 - Lemonade",
-      "NCT 127 - Simon Says",
-      "N.Flying - Leave It",
-      "N.Flying - Rooftop",
-      "N.Flying - Hot Potato",
-      "NMIXX - O.O",
-      "OH MY GIRL - Secret Garden",
-      "OH MY GIRL - Coloring Book",
-      "OH MY GIRL - Dolphin",
-      "OH MY GIRL - Dun Dun Dance",
-      "OH MY GIRL - 5th Season (SSFWL)",
-      "OH MY GIRL - Remember Me",
-      "Pentagon - Shine",
-      "Pentagon - Daisy",
-      "Pentagon - Dr. BeBe",
-      "Pentagon - Humph!",
-      "Pentagon - Naughty boy",
-      "Raiden, Irene - The Only",
-      "Raiden, DubVision - Keep My Light On",
-      "Red Velvet - Pose",
-      "Red Velvet - Queendom",
-      "Red Velvet - Carpool",
-      "Red Velvet - Umpah Umpah",
-      "Red Velvet - Dumb Dumb",
-      "Red Velvet - Russian Roulette",
-      "Red Velvet - RBB (Really Bad Boy)",
-      "Red Velvet - Ice Cream Cake",
-      "Red Velvet - Red Flavor",
-      "Red Velvet - Peek-A-Boo",
-      "Red Velvet - Power Up",
-      "Red Velvet - One Of These Nights",
-      "Red Velvet - Bad Boy",
-      "ROSÉ - On The Ground",
-      "ROSÉ - Gone",
-      "Sejeong - All of My Days",
-      "Sejeong - Whale",
-      "Seori - Running Through The Night",
-      "Seori - Lovers In The Night",
-      "Seori, eaJ - Dive with you",
-      "SEVENTEEN - Home",
-      "SEVENTEEN - Don\’t Wanna Cry",
-      "SEVENTEEN - Good to Me ",
-      "SEVENTEEN - THANKS",
-      "SEVENTEEN - Pinwheel",
-      "SEVENTEEN - Rock with you",
-      "SEVENTEEN - Ready to love",
-      "SEVENTEEN - HIT",
-      "SEVENTEEN - Pretty U",
-      "SEVENTEEN - Left & Right",
-      "SHAUN - Way Back Home",
-      "SHAUN - Bad Habits",
-      "SHAUN - Closed Ending",
-      "SHINee - Don\’t Call Me",
-      "SHINee - View",
-      "SHINee - Sherlock (Clue + Note)",
-      "SHINee - Good Evening",
-      "SISTAR - Touch my body",
-      "SISTAR - I Like That",
-      "SISTAR - LONELY",
-      "STAYC - Stereotype",
-      "STAYC - ASAP",
-      "STAYC - SO BAD",
-      "STAYC - LOVE FOOL",
-      "STAYC - RUN2U",
-      "Stray Kids - Christmas EveL",
-      "Stray Kids - Back Door",
-      "Stray Kids - My Pace",
-      "Stray Kids - God\'s Menu",
-      "Stray Kids - Easy",
-      "Stray Kids - Phobia",
-      "Stray Kids - Astronaut",
-      "Stray Kids - Pacemaker",
-      "Stray Kids - Haven",
-      "Stray Kids - Thunderous",
-      "Stray Kids - DOMINO",
-      "Stray Kids - CHEESE",
-      "Somi - Anymore",
-      "Somi - XOXO",
-      "Somi - Birthday",
-      "Somi - Outta My Head",
-      "Somi - DUMB DUMB",
-      "suggi - astroboy.",
-      "suggi - fuck u, goodluck.",
-      "suggi - uwu",
-      "SUNMI - Siren",
-      "SUNMI - Heroine",
-      "SUNMI - Gashina",
-      "SUNMI - pporappipam",
-      "SUNMI - You can\’t sit with us",
-      "SUNMI - LALALAY",
-      "SUNMI - Noir",
-      "SUPER JUNIOR - House Party",
-      "SUPER JUNIOR - Lo Siento",
-      "SUPER JUNIOR - Sorry Sorry",
-      "SUPER JUNIOR - Black Suit",
-      "SUPER JUNIOR - Devil",
-      "SUPER JUNIOR - Mamacita",
-      "SuperM - Jopping",
-      "SuperM - Tiger Inside",
-      "SuperM - One (Monster & Infinity)",
-      "SuperM - Better Days",
-      "SuperM - No Manners",
-      "SURAN, Changmo - WINE",
-      "SURAN - Heartbeat",
-      "SURAN - Into The Abyss",
-      "Taemin - MOVE", 
-      "Taemin - Criminal",
-      "Taeyang - Wedding Dress",
-      "Taeyang - Eyes, Nose, Lips",
-      "Taeyang - RINGA LINGA",
-      "Taeyeon, Verbal Jint - I",
-      "Taeyeon - Fine",
-      "Taeyeon - 11:11",
-      "Taeyeon - INVU",
-      "Taeyeon - Spark",
-      "Taeyeon - What Do I Call You",
-      "Taeyeon - Make Me Love You",
-      "Taeyeon - Feel So Fine",
-      "Taeyeon - Can\’t Control Myself",
-      "Taeyeon - Weekend",
-      "Taeyeon, DEAN - Starlight",
-      "TEN - Paint Me Naked",
-      "Twice - What is Love?",
-      "Twice - TT",
-      "Twice - Merry & Happy",
-      "Twice - YES or YES",
-      "Twice - The Feels",
-      "Twice - SCIENTIST",
-      "Twice - FANCY",
-      "Twice - Feel Special",
-      "Twice - Alcohol-Free",
-      "Twice - CRY FOR ME",
-      "Twice - I CAN\’T STOP ME",
-      "Twice - ONE IN A MILLION",
-      "Twice - LIKEY",
-      "Twice - CHEER UP",
-      "Twice - Like Ooh-Ahh",
-      "Twice - ICON",
-      "Twice - Knock Knock",
-      "TOMORROW X TOGETHER (TXT) - 9 and Three Quarters (Run Away)",
-      "TOMORROW X TOGETHER (TXT) - CROWN",
-      "TOMORROW X TOGETHER (TXT) - Blue Hour",
-      "TOMORROW X TOGETHER (TXT) - Cat & Dog",
-      "TOMORROW X TOGETHER (TXT) - LO$ER=LOVER",
-      "TOMORROW X TOGETHER (TXT) - 0X1=LOVESONG (I Know I Love You) feat. Seori",
-      "Triple H - 365 FRESH", 
-      "WayV - Love Talk - English Version",
-      "Weeekly - After School",
-      "Weeekly - Zig Zag",
-      "Weeekly - Ven para",
-      "Weeekly - Tag Me (@Me)",
-      "Weki Meki - Siesta",
-      "Weki Meki - Picky Picky",
-      "Weki Meki - DAZZLE DAZZLE",
-      "Weki Meki - Tiki-Taka (99%)",
-      "WINNER - REALLY REALLY",
-      "WINNER - AH YEAH",
-      "WINNER - MILLIONS",
-      "WINNER - FOOL",
-      "WINNER - EVERYDAY",
-      "WJSN - Secret",
-      "WJSN - Save Me, Save You",
-      "WJSN THE BLACK - Easy",
-      "WJSN Chocome - Hmph!",
-      "WOODZ - Love Me Harder",
-      "WOODZ - POOL",
-      "X1 - FLASH",
-      "YOUHA - Island",
-      "ZICO - Any song",
-      "ZICO - Okay Dokey",
-      "ZICO - BERMUDA TRIANGLE",
-      "ZICO, IU - SoulMate",
+  const Cn = ue([
+      "Lil Uzi Vert - XO Tour Llif3",
+      "Wham! - Last Christmas",
+      "Wham! - Wake Me Up Before You Go-Go",
+      "Wham! - Club Tropicana",
+      "DJ Khaled - Wild Thoughts (feat. Rihanna & Bryson Tiller)",
+      "John Legend - All of Me",
+      "John Legend - Ordinary People",
+      "John Legend - Used To Love You",
+      "John Legend - Green Light",
+      "Dua Lipa - Levitating",
+      "Dua Lipa - New Rules",
+      "Lil Nas X - Old Town Road",
+      "Lil Nas X - Panini",
+      "Lil Nas X - Rodeo",
+      "Lil Nas X - Industry Baby",
+      "Marshmello - FRIENDS",
+      "Marshmello - Alone",
+      "Marshmello - Shockwave",
+      "Toto - Africa",
+      "Lil Jon - Get Low (feat. Ying Yang Twins)",
+      "Cardi B - Bodak Yellow (feat. Kodak Black)",
+      "Ed Sheeran - Shape of You",
+      "The Kid LAROI. - Without You",
+      "The Kid LAROI. - Stay (feat. Justin Bieber)",
+      "The Kid LAROI. - Still Chose You",
+      "Eurythmics - Sweet Dreams (Are Made of This)",
+      "Eurythmics - There Must Be An Angel",
+      "Eurythmics - Walking On Broken Glass",
+      "The Chainsmokers - High",
+      "The Chainsmokers feat. Halsey - Closer",
+      "Katy Perry - Dark Horse (feat. Juicy J)",
+      "Katy Perry - Roar",
+      "Katy Perry - I Kissed A Girl",
+      "Katy Perry - This Is How We Do",
+      "Michael Jackson - Rock with You",
+      "Michael Jackson - Billie Jean",
+      "Michael Jackson - Bad",
+      "Michael Jackson - Wanna Be Startin' Somethin'",
+      "Michael Jackson - Beat It",
+      "Michael Jackson - P.Y.T",
+      "Rita Ora - Your Song",
+      "Rita Ora - Let You Love Me",
+      "Rita Ora - I Will Never Let You Down",
+      "Rita Ora - Anywhere",
+      "Wiz Khalifa - See You Again (feat. Charlie Puth)",
+      "Wiz Khalifa - Black And Yellow",
+      "Wiz Khalifa - Still Wiz",
+      "Wiz Khalifa - Can't Stay Sober",
+      "Adele - Someone Like You",
+      "Adele - Easy On Me",
+      "Adele - Chasing Pavements",
+      "Madonna - Like a Prayer",
+      "Madonna - Material Girl",
+      "Madonna - Holiday",
+      "Madonna - Vogue",
+      "Carly Rae Jepsen - Call Me Maybe",
+      "Adele - Rolling in the Deep",
+      "Oasis - Stand by Me",
+      "Tracy Chapman - Stand By Me",
+      "Otis Redding - Stand By Me",
+      "Otis Redding - Try A Little Tenderness",
+      "Otis Redding - I've Been Loving You Too Long",
+      "Otis Redding - These Arms of Mine",
+      "Lauv - I Like Me Better",
+      "Daft Punk - One More Time",
+      "Daft Punk - Around The World",
+      "Daft Punk - Da Funk",
+      "Daft Punk - Technologic",
+      "Lynyrd Skynyrd - Sweet Home Alabama",
+      "Sia - Cheap Thrills",
+      "twentyonepilots - Stressed Out",
+      "Mariah Carey - All I Want for Christmas Is You",
+      "Future - Life Is Good (feat. Drake)",
+      "Khalid - Location",
+      "Roddy Ricch - The Box",
+      "Jay-Z - Hard Knock Life (Ghetto Anthem)",
+      "Jay-Z - Empire State Of Mind",
+      "Jay-Z - Izzo (Hova)",
+      "Jay-Z - 99 Problems",
+      "Jay-Z - Dirt Off Your Shoulder",
+      "Lewis Capaldi - Someone You Loved",
+      "Lewis Capaldi - Before You Go",
+      "Lewis Capaldi - Hold Me While You Wait",
+      "Tracy Chapman - Fast Car",
+      "XXXTENTACION - SAD!",
+      "Oasis - Wonderwall",
+      "Oasis - Don't Look Back In Anger",
+      "Oasis - Champagne Supernova",
+      "Prince - Kiss",
+      "Prince - 1999",
+      "Prince - When Doves Cry",
+      "Prince - Purple Rain",
+      "Al Green - How Can You Mend A Broken Heart?",
+      "Al Green - Tired of Being Alone",
+      "Al Green - Love and Happiness",
+      "Al Green - Take Me To the River",
+      "Al Green - I'm Still in Love With You",
+      "David Bowie - Heroes",
+      "David Bowie - Life on Mars",
+      "David Bowie - Space Oddity",
+      "David Bowie - Let's Dance",
+      "Arethra Franklin - Respect",
+      "Arethra Franklin - A Natural Woman",
+      "Arethra Franklin - I Say A Little Prayer",
+      "Migos - Bad and Boujee (Feat. Lil Uzi Vert)",
+      "Migos - Versace",
+      "Migos - Walk It Talk It",
+      "Migos - MotorSport (feat. Nicki Minaj and Cardi B)",
+      "Ed Sheeran & Justin Bieber - I Don't Care",
+      "Ed Sheeran - Thinking Out Loud",
+      "Ed Sheeran - Bad Habits",
+      "Ed Sheeran - Castle on the Hill",
+      "Bruno Mars - 24K Magic",
+      "Duran Duran - Hungry Like The Wolf",
+      "Duran Duran - Girls on Film",
+      "Duran Duran - A View To a Kill",
+      "Duran Duran - Rio",
+      "Coldplay - Yellow",
+      "Coldplay - Fix You",
+      "Coldplay - Clocks",
+      "Eagles - Hotel California",
+      "Eagles - Lyin' Eyes",
+      "Eagles - Heartache Tonight",
+      "Eagles - New Kid In Town",
+      "Calvin Harris - Slide (feat. Frank Ocean & Migos)",
+      "Hozier - Take Me To Church",
+      "Cardi B - Up",
+      "Sean Paul - Temperature",
+      "Sean Paul - Gimme the Light",
+      "Sean Paul - Get Busy",
+      "Sean Paul - I'm Still In Love With You",
+      "Cardi B - WAP feat. Megan Thee Stallion",
+      "Goo Goo Dolls - Iris",
+      "XXXTENTACION - Jocelyn Flores",
+      "Linkin Park - Numb",
+      "Linkin Park - In the End",
+      "Linkin Park - Crawling",
+      "Linkin Park - Burn It Down",
+      "ZAYN - PILLOWTALK",
+      "ZAYN - Better",
+      "ZAYN - Vibez",
+      "ZAYN - Dusk till Dawn (feat. Sia)",
+      "Jason Mraz - I'm Yours",
+      "Doja Cat - Kiss Me More (feat. SZA)",
+      "Doja Cat - Woman",
+      "Doja Cat - Say So (feat. Nicki Minaj)",
+      "Leona Lewis - Bleeding Love",
+      "Leona Lewis - A Moment Like This",
+      "Leona Lewis - Better In Time",
+      "Leona Lewis - Run",
+      "XXXTENTACION - Moonlight",
+      "Mark Ronson - Uptown Funk (feat. Bruno Mars)",
+      "Mark Ronson - Valerie (feat. Amy Winehouse)",
+      "Mark Ronson - Nothing Breaks Like a Heart (feat. Miley Cyrus)",
+      "Mark Ronson - Find U Again (feat. Camila Cabello)",
+      "Megan Thee Stallion - Savage",
+      "Megan Thee Stallion - Thot Shit",
+      "Megan Thee Stallion - Girls In the Hood",
+      "Megan Thee Stallion - Hot Girl Summer (feat. Nicki Minaj & Ty Dolla Sign)",
+      "Jason Derulo - Want to Want Me",
+      "Jason Derulo - Ridin' Solo",
+      "Jason Derulo - Talk Dirty (feat. 2 Chainz)",
+      "Jason Derulo - Wiggle (feat. Snoop Dogg)",
+      "OneRepublic - Counting Stars",
+      "OneRepublic - Apologize",
+      "OneRepublic - Rescue Me",
+      "OneRepublic - Lose Somebody (feat. Kygo)",
+      "24kGoldn - Mood (feat. iann dior)",
+      "Fetty Wap - Trap Queen",
+      "Adele - Hello",
+      "The Fray - How to Save a Life",
+      "Train - Drops of Jupiter (Tell Me)",
+      "Train - Drive By",
+      "Train - Hey, Soul Sister",
+      "The Script - Breakeven",
+      "The Script - Superheroes",
+      "The Script - For The First Time",
+      "Calvin Harris - Summer",
+      "Calvin Harris - This Is What You Came For (feat. Rihanna)",
+      "Calvin Harris - Feels (feat. Pharrell Williams, Katy Perry and Big Sean)",
+      "Calvin Harris - One kiss (feat. Dua Lipa)",
+      "Marshmello - Silence (feat. Khalid)",
+      "Alan Walker - Faded",
+      "Lil Nas X - MONTERO (Call Me By Your Name)",
+      "Bruno Mars - That's What I Like",
+      "Bruno Mars - Treasure",
+      "Franz Ferdinand - Take Me Out",
+      "Arctic Monkeys - Do I Wanna Know?",
+      "Arctic Monkeys - I Bet You Look Good on the Dancefloor",
+      "Arctic Monkeys - Why'd You Only Call Me When You're High?",
+      "Arctic Monkeys - When the Sun Goes Down",
+      "French Montana - Unforgettable (feat. Swae Lee)",
+      "The Chainsmokers - Don't Let Me Down (feat. Daya)",
+      "George Ezra - Shotgun",
+      "Tones and I - Dance Monkey",
+      "Miley Cyrus - Wrecking Ball",
+      "Miley Cyrus - Malibu",
+      "Miley Cyrus - Midnight Sky",
+      "Miley Cyrus - We Can't Stop",
+      "Clean Bandit - Rockabye (feat. Sean Paul & Anne-Marie)",
+      "Ed Sheeran - Perfect",
+      "Kings of Leon - Sex on Fire",
+      "Kings of Leon - Wait for Me",
+      "Kings of Leon - Closer",
+      "Kings of Leon - Pyro",
+      "Kings of Leon - Revelry",
+      "James Blunt - You're Beautiful",
+      "Vance Joy - Riptide",
+      "Vance Joy - Mess Is Mine",
+      "Vance Joy - Georgia",
+      "Joy Division - Love Will Tear Us Apart",
+      "Joy Division - Disorder",
+      "Joy Division - Transmission",
+      "Joy Division - Atmosphere",
+      "Notorious B.I.G. - Juicy",
+      "Notorious B.I.G. - One More Chance (Remix)",
+      "Notorious B.I.G. - Hypnotize",
+      "Neil Young - Heart Of Gold",
+      "Neil Young - Harvest Moon",
+      "Neil Young - Down By The River",
+      "Pet Shop Boys - West End Girls",
+      "Pet Shop Boys - Go West",
+      "Pet Shop Boys - It's A Sin",
+      "Camila Cabello - Havana (feat. Young Thug)",
+      "Travis Scott - SICKO MODE",
+      "Kate Bush - Wuthering Heights",
+      "Kate Bush - This Woman's Work",
+      "Kate Bush - Babooshka",
+      "Kate Bush - Cloudbusting",
+      "Seal - Crazy",
+      "Seal - Kiss From A Rose",
+      "Red Hot Chili Peppers - Californication",
+      "Red Hot Chili Peppers - Under The Bridge",
+      "Red Hot Chili Peppers - Don't Stop",
+      "Alanis Morissette - Hand In My Pocket",
+      "Alanis Morissette - Ironic",
+      "Alanis Morissette - Thank U",
+      "Alanis Morissette - Head over Feet",
+      "Phil Collins - Another Day In Paradise",
+      "Phil Collins - In The Air Tonight",
+      "Phil Collins - You Can't Hurry Love",
+      "Phil Collins - Easy Lover",
+      "Phil Collins - One More Night",
+      "Joni Mitchell - River",
+      "Joni Mitchell - A Case of You",
+      "Joni Mitchell - Big Yellow Taxi",
+      "The Doors - Light My Fire",
+      "The Doors - End Of The Night",
+      "The Doors - Riders of the Storm",
+      "The Doors - Roadhouse Blues",
+      "Pink Floyd - Another Brick in the Wall (Part II)",
+      "Pink Floyd - Money",
+      "Pink Floyd - Comfortably Numb",
+      "Pink Floyd - One of My Turns",
+      "Charlie Puth - Attention",
+      "Childish Gambino - This is America",
+      "Childish Gambino - Summertime Magic",
+      "Childish Gambino - 3005",
+      "Childish Gambino - Feels Like Summer",
+      "Dua Lipa - Don't Start Now",
+      "T.I. - Live Your Life (feat. Rihanna)",
+      "T.I. - Whatever You Like",
+      "T.I. - What You Know",
+      "T.I. - Dead and Gone, (feat. Justin Timberlake)",
+      "Outkast - Hey Ya!",
+      "Led Zeppelin - Stairway to Heaven",
+      "Led Zeppelin - Black Dog",
+      "Led Zeppelin - Immigrant Song",
+      "Led Zeppelin - Whole Lotta Love",
+      "Tina Turner - The Best",
+      "Tina Turner - What's Love Got to Do With It",
+      "Tina Turner - Proud Mary",
+      "Tina Turner - We Don't Need Another Hero (Thunderdome)",
+      "Spandau Ballet - True",
+      "Spandau Ballet - Gold",
+      "Rod Stewart - Maggie May",
+      "Rod Stewart - Do Ya Think I'm Sexy?",
+      "Rod Stewart - First Cut is the Deepest",
+      "Curtis Mayfield - Move on Up",
+      "Curtis Mayfield - Superfly",
+      "Curtis Mayfield - Pusherman",
+      "Bad Day - Daniel Powter",
+      "Simply Red - Stars",
+      "Simply Red - If You Don't Know Me By Now",
+      "Simply Red - Fairground",
+      "Simply Red - Holding Back the Years",
+      "Kylie Minogue - Can't Get You Out of My Head",
+      "Kylie Minogue - The Loco-motion",
+      "Kylie Minogue - Spinning Around",
+      "Kylie Minogue - I Should Be So Lucky",
+      "Eric Clapton - Tears In Heaven",
+      "Eric Clapton - Wonderful Tonight",
+      "Eric Clapton - Cocaine",
+      "Eric Clapton - Change The World",
+      "Foreigner - I Want to Know What Love Is",
+      "Mark Cohn - Walking in Memphis",
+      "A-ha - Take on Me",
+      "Tom Petty - Wildflowers",
+      "Christina Perri - A Thousand Years",
+      "Roxette - It Must Have Been Love",
+      "Whitney Houston - How Will I Know?",
+      "Whitney Houston - I'm Every Woman",
+      "Whitney Houston - I Will Always Love You",
+      "Whitney Houston - I Have Nothing",
+      "Lizzo - Rumors (feat. Cardi B)",
+      "Lizzo - Good As Hell",
+      "Lizzo - Juice",
+      "Blur - Coffee and TV",
+      "Blur - Beetlebum",
+      "Blur - Parklife",
+      "Outkast - Elevators (Me & You)",
+      "Outkast - The Whole World (feat. Killer Mike)",
+      "Outkast - Roses",
+      "Outkast - The Way You Move (feat. Sleepy Brown)",
+      "Gorillaz - Clint Eastwood",
+      "Gorillaz - Dirty Harry",
+      "Gorillaz - Dare",
+      "Gorillaz - El Mañana",
+      "Fountains of Wayne - Stacy's Mom",
+      "Blink 182 - All The Small Things",
+      "The Killers - Somebody Told Me",
+      "Avril Lavigne - Sk8ter Boi",
+      "Franz Ferdinand - Take Me Out",
+      "The Fratellis - Chelsea Dagger",
+      "Green Day - American Idiot",
     ]),
     On = {
       subscribe: ue(
         [
           {
-            url: "https://soundcloud.com/l2share80/stray-kids-miroh",
-            answer: "Stray Kids - Miroh",
+            url: "https://soundcloud.com/thexxofficial/intro",
+            answer: "The xx - Intro",
           },
           {
-            url: "https://soundcloud.com/l2share95/red-velvet-psycho",
-            answer: "Red Velvet - Psycho",
+            url: "https://soundcloud.com/dualipa/levitating",
+            answer: "Dua Lipa - Levitating",
           },
           {
-            url: "https://soundcloud.com/l2share103/raiden-chanyeol-yours-feat-lee-hi-changmo",
-            answer: "Raiden, Chanyeol, LeeHi, Changmo - Yours",
+            url: "https://soundcloud.com/adelemusic/set-fire-to-the-rain-1",
+            answer: "Adele - Set Fire to the Rain",
           },
           {
-            url: "https://soundcloud.com/rk1mea33yulh/nct-u-boss",
-            answer: "NCT U - BOSS",
+            url: "https://soundcloud.com/coldplay/the-scientist",
+            answer: "Coldplay - The Scientist",
           },
           {
-            url: "https://soundcloud.com/somi_official/what-you-waiting-for",
-            answer: "Somi - What You Waiting For",
+            url: "https://soundcloud.com/bennyblanco/eastside",
+            answer: "Benny Blanco - Eastside (feat. Halsey and Khalid)",
           },
           {
-            url: "https://soundcloud.com/mai_g33z/big-bang-sober",
-            answer: "BIGBANG - Sober",
+            url: "https://soundcloud.com/nirvana/smells-like-teen-spirit-1",
+            answer: "Nirvana - Smells Like Teen Spirit",
           },
           {
-            url: "https://soundcloud.com/seoyeon-962740403/oh-my-girl-nonstop-2",
-            answer: "OH MY GIRL - Nonstop",
+            url: "https://soundcloud.com/amalaofficial/streets",
+            answer: "Doja cat - Streets",
           },
           {
-            url: "https://soundcloud.com/user-306544001/blueming",
-            answer: "IU - Blueming",
+            url: "https://soundcloud.com/beyonce/halo",
+            answer: "Beyoncé - Halo",
           },
           {
-            url: "https://soundcloud.com/destinee-nsombe/wjsn-cosmic-girls-i-wish",
-            answer: "WJSN - I Wish",
+            url: "https://soundcloud.com/fleetwoodmacofficial/dreams",
+            answer: "Fleetwood Mac - Dreams",
           },
           {
-            url: "https://soundcloud.com/user-740080136/woodz-different",
-            answer: "WOODZ - DIFFERENT",
+            url: "https://soundcloud.com/kanyewest/black-skinhead",
+            answer: "Kanye West - Black Skinhead",
           },
           {
-            url: "https://soundcloud.com/ana-clara-anjos/exid-ddd",
-            answer: "EXID - DDD",
+            url: "https://soundcloud.com/arianagrande/7-rings",
+            answer: "Ariana Grande - 7 rings",
           },
           {
-            url: "https://soundcloud.com/l2share52/piri",
-            answer: "Dreamcatcher - PIRI",
+            url: "https://soundcloud.com/kingsofleon/use-somebody",
+            answer: "Kings of Leon - Use Somebody",
           },
           {
-            url: "https://soundcloud.com/404wave/epik-high-rosario-feat-cl",
-            answer: "Epik High, CL, ZICO - ROSARIO",
+            url: "https://soundcloud.com/outkast-music/ms-jackson",
+            answer: "Outkast - Ms. Jackson",
           },
           {
-            url: "https://soundcloud.com/user-947257024/junny-movie-mp3",
-            answer: "JUNNY - MOVIE",
+            url: "https://soundcloud.com/secret-service-862007284/thats-what-i-want",
+            answer: "Lil Nas X - That's What I Want",
           },
           {
-            url: "https://soundcloud.com/vanessaa0303/suran-love-story-ft-crush-feat-3d-audio-use-headphones",
-            answer: "SURAN, Crush - Love Story",
+            url: "https://soundcloud.com/rihanna/rude-boy",
+            answer: "Rihanna - Rude Boy",
           },
           {
-            url: "https://soundcloud.com/twice-57013/heart-shaker",
-            answer: "Twice - Heart Shaker",
+            url: "https://soundcloud.com/whitneyhouston/i-wanna-dance-with-somebody-1",
+            answer:
+              "Whitney Houston - I Wanna Dance With Somebody (Who Loves Me)",
           },
           {
-            url: "https://soundcloud.com/l2share47/laboum-hwi-hwi",
-            answer: "LABOUM - Hwi Hwi",
+            url: "https://soundcloud.com/wheatus-official/teenage-dirtbag-1",
+            answer: "Wheatus - Teenage Dirtbag",
           },
           {
-            url: "https://soundcloud.com/l2share42/stay",
-            answer: "BLACKPINK - STAY",
+            url: "https://soundcloud.com/lizzomusic/truth-hurts",
+            answer: "Lizzo - Truth Hurts",
           },
           {
-            url: "https://soundcloud.com/trblinprds/sik-k-ph-1-jay-park-iffy-prod-groovyroom",
-            answer: "Jay Park, SiK-K, pH-1 - iffy (Prod. GroovyRoom)",
+            url: "https://soundcloud.com/blurofficial/song-2",
+            answer: "Blur - Song 2",
           },
           {
-            url: "https://soundcloud.com/itzy-music/dalla-dalla",
-            answer: "ITZY - DALLA DALLA",
+            url: "https://soundcloud.com/childish-gambino/redbone",
+            answer: "Childish Gambino - Redbone",
           },
           {
-            url: "https://soundcloud.com/user-309258560/kim-sejeong-flower-road",
-            answer: "Sejeong - Flower Way (Prod. By ZICO)",
+            url: "https://soundcloud.com/madonna/like-a-virgin-album-version",
+            answer: "Madonna - Like a Virgin",
           },
           {
-            url: "https://soundcloud.com/sunmi-sc/tail",
-            answer: "Sunmi - TAIL",
+            url: "https://soundcloud.com/daftpunkofficialmusic/harder-better-faster",
+            answer: "Daft Punk - Harder, Better, Faster, Stronger",
           },
           {
-            url: "https://soundcloud.com/l2share138/weeekly-holiday-party",
-            answer: "Weeekly - Holiday Party",
+            url: "https://soundcloud.com/al-green-official/lets-stay-together-5",
+            answer: "Al Green - Let's Stay Together",
           },
           {
-            url: "https://soundcloud.com/helen_mmyo14/advice-taemin",
-            answer: "Taemin - Advice",
-          },
-          {
-            url: "https://soundcloud.com/moonjaypark/shinee-replay",
-            answer: "Shinee - Replay",
-          },
-          {
-            url: "https://soundcloud.com/leidy-gonzalez-804207327/mamamoo-gogobebe",
-            answer: "Mamamoo - gogobebe",
+            url: "https://soundcloud.com/atlanticrecords/locked-out-of-heaven",
+            answer: "Bruno Mars - Locked Out of Heaven",
           },
         ],
-        Pn
+        An
       ).subscribe,
     };
-  var Pn;
-  const { document: Ln, window: An } = X;
+  var An;
+  const { document: Ln, window: Pn } = X;
   function Nn(e) {
     let t, n;
     return (
-      (t = new At({
+      (t = new Pt({
         props: {
           hasFrame: e[10].hasFrame,
           title: e[10].title,
           $$slots: {
-            default: [Fn],
+            default: [Gn],
           },
           $$scope: {
             ctx: e,
@@ -9333,7 +9179,7 @@ var app = (function () {
       }
     );
   }
-  function Fn(e) {
+  function Gn(e) {
     let t, n, r, s;
     const i = [Rn, Wn, In, Hn],
       o = [];
@@ -9387,7 +9233,7 @@ var app = (function () {
       }
     );
   }
-  function Gn(e) {
+  function Fn(e) {
     let t, n, r;
     function s(t) {
       e[23](t);
@@ -9445,14 +9291,14 @@ var app = (function () {
     );
   }
   function En(e) {
-    let t, n, s, i, o, a, l, u, c, d, h, f, m, v, k, _, b, $, D, Y, C, O, P, L;
-    G(e[18]),
+    let t, n, s, i, o, a, l, u, c, d, h, f, m, v, k, _, b, $, D, Y, C, O, A, L;
+    F(e[18]),
       (l = new me({
         props: {
           properties: ["G-3QSG4MYSLD"],
         },
       }));
-    let A = e[10].isActive && Nn(e);
+    let P = e[10].isActive && Nn(e);
     (f = new xe({})),
       f.$on("modal", e[16]),
       (_ = new Ie({
@@ -9487,7 +9333,7 @@ var app = (function () {
       e[21](Y),
       Y.$on("updateSong", e[13]),
       Y.$on("updatePlayerState", e[14]);
-    let H = !e[5].hasFinished && e[8].gameIsActive && Gn(e);
+    let H = !e[5].hasFinished && e[8].gameIsActive && Fn(e);
     return {
       c() {
         (t = w("meta")),
@@ -9499,7 +9345,7 @@ var app = (function () {
           Q(l.$$.fragment),
           (u = x()),
           (c = w("main")),
-          A && A.c(),
+          P && P.c(),
           (d = x()),
           (h = w("div")),
           Q(f.$$.fragment),
@@ -9513,12 +9359,12 @@ var app = (function () {
           Q(Y.$$.fragment),
           (C = x()),
           H && H.c(),
-          (Ln.title = "Heardle K-💩 - That K-Pop song intros game"),
+          (Ln.title = "Heardle - That daily musical intros game"),
           M(t, "name", "description"),
           M(
             t,
             "content",
-            "Guess the K-Pop song from the intro in as few tries as possible"
+            "Guess the song from the intro in as few tries as possible"
           ),
           M(n, "rel", "apple-touch-icon"),
           M(n, "sizes", "180x180"),
@@ -9557,7 +9403,7 @@ var app = (function () {
           ee(l, r, y),
           g(r, u, y),
           g(r, c, y),
-          A && A.m(c, null),
+          P && P.m(c, null),
           p(c, d),
           p(c, h),
           ee(f, h, null),
@@ -9572,18 +9418,18 @@ var app = (function () {
           p(c, C),
           H && H.m(c, null),
           (O = !0),
-          P ||
-            ((L = [S(An, "resize", e[17]), S(An, "resize", e[18])]), (P = !0));
+          A ||
+            ((L = [S(Pn, "resize", e[17]), S(Pn, "resize", e[18])]), (A = !0));
       },
       p(e, t) {
         e[10].isActive
-          ? A
-            ? (A.p(e, t), 1024 & t[0] && Z(A, 1))
-            : ((A = Nn(e)), A.c(), Z(A, 1), A.m(c, d))
-          : A &&
+          ? P
+            ? (P.p(e, t), 1024 & t[0] && Z(P, 1))
+            : ((P = Nn(e)), P.c(), Z(P, 1), P.m(c, d))
+          : P &&
             (J(),
-            q(A, 1, 1, () => {
-              A = null;
+            q(P, 1, 1, () => {
+              P = null;
             }),
             K());
         const n = {};
@@ -9608,7 +9454,7 @@ var app = (function () {
           !e[5].hasFinished && e[8].gameIsActive
             ? H
               ? (H.p(e, t), 288 & t[0] && Z(H, 1))
-              : ((H = Gn(e)), H.c(), Z(H, 1), H.m(c, null))
+              : ((H = Fn(e)), H.c(), Z(H, 1), H.m(c, null))
             : H &&
               (J(),
               q(H, 1, 1, () => {
@@ -9620,7 +9466,7 @@ var app = (function () {
       i(e) {
         O ||
           (Z(l.$$.fragment, e),
-          Z(A),
+          Z(P),
           Z(f.$$.fragment, e),
           Z(_.$$.fragment, e),
           Z($.$$.fragment, e),
@@ -9630,7 +9476,7 @@ var app = (function () {
       },
       o(e) {
         q(l.$$.fragment, e),
-          q(A),
+          q(P),
           q(f.$$.fragment, e),
           q(_.$$.fragment, e),
           q($.$$.fragment, e),
@@ -9648,14 +9494,14 @@ var app = (function () {
           te(l, d),
           d && y(u),
           d && y(c),
-          A && A.d(),
+          P && P.d(),
           te(f),
           te(_),
           te($),
           e[21](null),
           te(Y),
           H && H.d(),
-          (P = !1),
+          (A = !1),
           r(L);
       },
     };
@@ -9694,7 +9540,7 @@ var app = (function () {
     function p() {
       n(3, (m = window.innerHeight));
     }
-    P(() => {
+    A(() => {
       p();
     });
     null == localStorage.getItem("userStats")
@@ -9770,8 +9616,7 @@ var app = (function () {
             name: "startGame",
           }),
           n(2, (l.hasStarted = !0), l)),
-          n(8, (w.musicIsPlaying = e.detail.musicIsPlaying), w),
-          w.musicIsPlaying && !f.hasFinished && g.focus();
+          n(8, (w.musicIsPlaying = e.detail.musicIsPlaying), w);
       },
       function (e) {
         let t = e.detail.guess,
@@ -9850,7 +9695,7 @@ var app = (function () {
       },
       () => {},
       function () {
-        n(3, (m = An.innerHeight));
+        n(3, (m = Pn.innerHeight));
       },
       () => n(10, (k.isActive = !1), k),
       () => n(10, (k.isActive = !1), k),
