@@ -3622,7 +3622,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A respectful clone of<a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">If your favorite artist/song isn\'t in the game, I\'m sorry! It is really difficult for me to add every single K-Pop artist.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
+            '<p class="mb-3">A respectful clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, except it\'s with K-Pop songs.</p> \n\n<p class="mb-3">Each Heardle K-💩 is semi-randomly plucked from a long list of popularly streamed K-Pop artists. Much love, and all relevant copyright, to those featured.</p> \n\n<p class="mb-3">If your favorite artist/song isn\'t in the game, I\'m sorry! It is really difficult for me to add every single K-Pop artist.</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Display">Noto Serif Display</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://vercel.com/">Vercel</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>.</p>'),
           M(n, "class", "text");
       },
       m(e, t) {
@@ -3648,14 +3648,14 @@ var app = (function () {
         (n = w("div")),
           (r = w("a")),
           (r.innerHTML =
-            '<span class="kofitext svelte-1d3p4dy"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Support the original devs on Ko-Fi</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>'),
+            '<span class="kofitext svelte-1d3p4dy"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Support us on Ko-Fi</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>'),
           M(
             r,
             "class",
             "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
           ),
-          M(r, "href", "https://ko-fi.com/heardle"),
-          M(r, "title", "Support the original devs on Ko-Fi"),
+          M(r, "href", "https://ko-fi.com/heardlekpop"),
+          M(r, "title", "Support us on Ko-Fi"),
           M(
             n,
             "class",
@@ -3839,8 +3839,8 @@ var app = (function () {
               "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew a lot of people would want to play. 😊"),
             (r = x()),
             (s = w("p")),
-            (s.textContent =
-              "Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game. If you've enjoyed playing Heardle K-💩, then please consider supporting the real Heardle devs."),
+            (s.innerHTML =
+              '<p class="mb-3">Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game.</p> \n\n<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the real <a href="https://ko-fi.com/heardle">Heardle devs.</a></p>'),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
