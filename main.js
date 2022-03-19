@@ -9106,7 +9106,7 @@ var app = (function () {
             answer: "WJSN - I Wish",
           },
           {
-            url: "https://soundcloud.com/user-740080136/woodz-different",
+            url: "https://soundcloud.com/user-964234543/different",
             answer: "WOODZ - DIFFERENT",
           },
           {
@@ -9122,11 +9122,11 @@ var app = (function () {
             answer: "Epik High, CL, ZICO - ROSARIO",
           },
           {
-            url: "https://soundcloud.com/user-947257024/junny-movie-mp3",
+            url: "https://soundcloud.com/0ws3ltjitb0b/junny-movie",
             answer: "JUNNY - MOVIE",
           },
           {
-            url: "https://soundcloud.com/vanessaa0303/suran-love-story-ft-crush-feat-3d-audio-use-headphones",
+            url: "https://soundcloud.com/unbandit/suran-love-story-feat-crush",
             answer: "SURAN, Crush - Love Story",
           },
           {
