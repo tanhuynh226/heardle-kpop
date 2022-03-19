@@ -8873,7 +8873,6 @@ var app = (function () {
       "Monsta X - MIDDLE OF THE NIGHT",
       "Monsta X, French Montana - WHO DO U LOVE?",
       "Monsta X, Steve Aoki - Play It Cool",
-      "NCT DREAM - Chewing Gum",
       "NCT DREAM - BOOM",
       "NCT DREAM - Hot Sauce",
       "NCT DREAM - Hello Future",
@@ -9054,7 +9053,6 @@ var app = (function () {
       "WINNER - MILLIONS",
       "WINNER - FOOL",
       "WINNER - EVERYDAY",
-      "WJSN - I Wish",
       "WJSN - Secret",
       "WJSN - Save Me, Save You",
       "WJSN THE BLACK - Easy",
@@ -9105,8 +9103,8 @@ var app = (function () {
             answer: "IU - Blueming",
           },
           {
-            url: "https://soundcloud.com/l2share47/weki-meki-crush",
-            answer: "Weki Meki - Crush",
+            url: "https://soundcloud.com/destinee-nsombe/wjsn-cosmic-girls-i-wish",
+            answer: "WJSN - I Wish",
           },
           {
             url: "https://soundcloud.com/user-740080136/woodz-different",
