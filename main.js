@@ -3848,11 +3848,11 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "I hope you guys like Heardle K-💩. With the increasing number of daily players, we've been forced to pay for a premium service (Glitch Pro) that can accomodate larger player capacities. This money is straight out of our own pockets since we refuse to run ads. If you enjoyed the game and would like to support us with server costs, please consider donating. 😊"),
+              "With the increasing number of daily players, we've been forced to pay for a premium service (Glitch Pro) that can accomodate larger player capacities. This money is straight out of our own pockets since we refuse to run ads. If you enjoyed the game and would like to support us with server costs, please consider donating. 😊"),
             (r = x()),
             (s = w("p")),
             (s.innerHTML =
-              '<p class="mb-3">Again, this is a nearly identical clone with Heardle but with different songs and I plan this to take this down if the original devs ever release their own K-Pop version of the game.</p> \n\n<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the <a href="https://ko-fi.com/heardle">real Heardle devs.</a></p>'),
+              '<p class="mb-3">If you\'ve enjoyed playing Heardle K-💩, then please consider supporting the <a href="https://ko-fi.com/heardle">real Heardle devs.</a></p>'),
             (i = x()),
             (o = w("div")),
             Q(a.$$.fragment),
