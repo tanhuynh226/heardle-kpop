@@ -8620,7 +8620,6 @@ var app = (function () {
       "Apink - Dumhdurum",
       "Apink - Mr. Chu",
       "Apink - NoNoNo",
-      "ATEEZ - Answer",
       "ATEEZ - Wave",
       "ATEEZ - Deja Vu",
       "ATEEZ - Fireworks (I\’m The One)",
@@ -8648,7 +8647,6 @@ var app = (function () {
       "BLACKPINK - PLAYING WITH FIRE",
       "BOL4 - X Song",
       "BOL4 - Bom",
-      "BOL4 - Some",
       "BOL4 - Workaholic",
       "BOL4 - To My Youth",
       "BOL4 - Travel",
@@ -9059,7 +9057,6 @@ var app = (function () {
       "WOODZ - POOL",
       "X1 - FLASH",
       "YOUHA - Island",
-      "ZICO - Any song",
       "ZICO - Okay Dokey",
       "ZICO - BERMUDA TRIANGLE",
       "ZICO, IU - SoulMate",
@@ -9172,12 +9169,28 @@ var app = (function () {
             answer: "Mamamoo - gogobebe",
           },
           {
+            url: "https://soundcloud.com/l2share96/any-song",
+            answer: "ZICO - Any song",
+          },
+          {
             url: "https://soundcloud.com/l2share52/izone-violeta",
             answer: "IZ*ONE - Violeta",
           },
           {
             url: "https://soundcloud.com/l2share42/boom",
             answer: "NCT DREAM - BOOM",
+          },
+          {
+            url: "https://soundcloud.com/study-with-sasha/bol4-some",
+            answer: "BOL4 - Some",
+          },
+          {
+            url: "https://soundcloud.com/l2share95/ateez-answer",
+            answer: "ATEEZ - Answer",
+          },
+          {
+            url: "https://soundcloud.com/user-794516518/how-people-move_akmu-6047457",
+            answer: "AKMU - How PEo",
           },
           {
             url: "https://soundcloud.com/l2share149/maniac-stray-kids",
