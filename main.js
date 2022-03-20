@@ -8822,7 +8822,6 @@ var app = (function () {
       "IZ*ONE - FIESTA",
       "IZ*ONE - Highlight",
       "IZ*ONE - Panorama",
-      "IZ*ONE - Violeta",
       "Jay Park, Hoody, Loco - All I Wanna Do (K)",
       "Jay Park - MOMMAE",
       "Jay Park, IU - GANADARA",
@@ -8879,7 +8878,6 @@ var app = (function () {
       "Monsta X - MIDDLE OF THE NIGHT",
       "Monsta X, French Montana - WHO DO U LOVE?",
       "Monsta X, Steve Aoki - Play It Cool",
-      "NCT DREAM - BOOM",
       "NCT DREAM - Hot Sauce",
       "NCT DREAM - Hello Future",
       "NCT DREAM - Ridin\’",
@@ -9172,6 +9170,18 @@ var app = (function () {
           {
             url: "https://soundcloud.com/leidy-gonzalez-804207327/mamamoo-gogobebe",
             answer: "Mamamoo - gogobebe",
+          },
+          {
+            url: "https://soundcloud.com/l2share52/izone-violeta",
+            answer: "IZ*ONE - Violeta",
+          },
+          {
+            url: "https://soundcloud.com/l2share42/boom",
+            answer: "NCT DREAM - BOOM",
+          },
+          {
+            url: "https://soundcloud.com/l2share149/maniac-stray-kids",
+            answer: "Stray Kids - MANIAC",
           },
         ],
         Pn
