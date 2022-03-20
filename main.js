@@ -8731,7 +8731,6 @@ var app = (function () {
       "EXID - I Love You",
       "EXID - Up & Down",
       "EXO - Growl",
-      "EXO - Love Shot",
       "EXO - Monster",
       "EXO - Ko Ko Bop",
       "EXO - Lotto",
@@ -8865,7 +8864,6 @@ var app = (function () {
       "MOMOLAND - I\’m So Hot",
       "MOMOLAND - Wrap Me In Plastic",
       "MOMOLAND - Thumbs Up",
-      "Monsta X - Shoot Out",
       "Monsta X - Love Killa",
       "Monsta X - SOMEONE\’S SOMEONE",
       "Monsta X - MIDDLE OF THE NIGHT",
@@ -9039,7 +9037,6 @@ var app = (function () {
       "Weki Meki - Picky Picky",
       "Weki Meki - DAZZLE DAZZLE",
       "Weki Meki - Tiki-Taka (99%)",
-      "WINNER - REALLY REALLY",
       "WINNER - AH YEAH",
       "WINNER - MILLIONS",
       "WINNER - FOOL",
@@ -9124,6 +9121,10 @@ var app = (function () {
             answer: "Twice - Heart Shaker",
           },
           {
+            url: "https://soundcloud.com/l2share77/monsta-x-shoot-out",
+            answer: "MONSTA X - Shoot Out",
+          },
+          {
             url: "https://soundcloud.com/l2share47/laboum-hwi-hwi",
             answer: "LABOUM - Hwi Hwi",
           },
@@ -9189,7 +9190,7 @@ var app = (function () {
           },
           {
             url: "https://soundcloud.com/l2share148/aespa-dreams-come-true",
-            answer:  "aespa - Dreams Come True",
+            answer: "aespa - Dreams Come True",
           },
           {
             url: "https://soundcloud.com/l2share149/maniac-stray-kids",
@@ -9204,12 +9205,20 @@ var app = (function () {
             answer: "EVERGLOW - Pirate",
           },
           {
-            url: "https://soundcloud.com/seuungcheol/gfriend-me-gustas-tu",
-            answer: "GFRIEND - Me Gustas Tu",
+            url: "https://soundcloud.com/l2share66/ikon-killing-me",
+            answer: "iKON - KILLING ME",
           },
           {
             url: "https://soundcloud.com/seuungcheol/gfriend-me-gustas-tu",
             answer: "GFRIEND - Me Gustas Tu",
+          },
+          {
+            url: "https://soundcloud.com/l2shareexo2/exo-love-shot-1",
+            answer: "EXO - Love Shot",
+          },
+          {
+            url: "https://soundcloud.com/schwd/really-really-winner",
+            answer: "WINNER - REALLY REALLY",
           },
         ],
         Pn
