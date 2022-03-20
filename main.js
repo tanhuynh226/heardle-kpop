@@ -3848,7 +3848,7 @@ var app = (function () {
         c() {
           (n = w("p")),
             (n.textContent =
-              "I hope you guys like Heardle K-💩. One of my friends suggested I make this and I was already desperate to find any escape from having to study for finals. This was intended to just be for my group of friends but I decided to release this to the public because I knew a lot of people would want to play. 😊"),
+              "I hope you guys like Heardle K-💩. With the increasing number of daily players, we've been forced to pay for a premium service (Glitch Pro) that can accomodate larger player capacities. This money is straight out of our own pockets since we refuse to run ads. If you enjoyed the game and would like to support us with server costs, please consider donating. 😊"),
             (r = x()),
             (s = w("p")),
             (s.innerHTML =
