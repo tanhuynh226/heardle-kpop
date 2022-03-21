@@ -3906,7 +3906,7 @@ var app = (function () {
     },
     Jt = [
       "Unlucky. At least you discovered a new song! 😉", // FAILED
-      "Sheesh! You're a true Koreaboo!", // First try
+      "Sheesh! You're a true K-Pop fan!", // First try
       "You're pretty daebak!?",
       "Hey, that was pretty joh-eun.",
       "Not nappeun.",
