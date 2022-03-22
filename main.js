@@ -8770,6 +8770,10 @@ var app = (function () {
       "Girls\’ Generation (SNSD) - I GOT A BOY",
       "Girls\’ Generation (SNSD) - Mr.Mr.",
       "Girls\’ Generation (SNSD) - Party",
+      "GOT7 - You Calling My Name",
+      "GOT7 - Just right",
+      "GOT7 - NOT BY THE MOON",
+      "GOT7 - Hard Carry",
       "HEIZE - Star",
       "HEIZE - You, Clouds, Rain",
       "HEIZE - And July",
@@ -8807,6 +8811,7 @@ var app = (function () {
       "IU - Drama",
       "IU - Love Poem",
       "IVE - ELEVEN",
+      "IVE - Take It",
       "IZ*ONE - Airplane",
       "IZ*ONE - La Vie en Rose",
       "IZ*ONE - Secret Story of the Swan",
@@ -9109,6 +9114,10 @@ var app = (function () {
             answer: "Epik High, CL, ZICO - ROSARIO",
           },
           {
+            url: "https://soundcloud.com/l2share47/clc-hobgoblin",
+            answer: "CLC - 도깨비 (Hobgoblin)",
+          },
+          {
             url: "https://soundcloud.com/0ws3ltjitb0b/junny-movie",
             answer: "JUNNY - MOVIE",
           },
@@ -9251,6 +9260,14 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share127/stayc-asap",
             answer: "STAYC - ASAP",
+          },
+          {
+            url: "https://soundcloud.com/l2share127/stayc-asap",
+            answer: "GOT7 - ECLIPSE",
+          },
+          {
+            url: "https://soundcloud.com/l2share47/weki-meki-crush",
+            answer: "Weki Meki - Crush",
           },
         ],
         Pn
