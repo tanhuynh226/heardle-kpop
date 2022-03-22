@@ -8979,7 +8979,7 @@ var app = (function () {
       "SuperM - One (Monster & Infinity)",
       "SuperM - Better Days",
       "SuperM - No Manners",
-      "SURAN, Changmo - WINE",
+      "SURAN, Crush - Love Story",
       "SURAN - Heartbeat",
       "SURAN - Into The Abyss",
       "Taemin - MOVE", 
@@ -9117,8 +9117,8 @@ var app = (function () {
             answer: "BLACKPINK - STAY",
           },
           {
-            url: "https://soundcloud.com/unbandit/suran-love-story-feat-crush",
-            answer: "SURAN, Crush - Love Story",
+            url: "https://soundcloud.com/satgotdepressed/suran-wine-feat-changmoprod-suga",
+            answer: "SURAN, Changmo - WINE (Prod. SUGA)",
           },
           {
             url: "https://soundcloud.com/l2share77/monsta-x-shoot-out",
