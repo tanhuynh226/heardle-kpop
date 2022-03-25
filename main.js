@@ -8739,7 +8739,6 @@ var app = (function () {
       "EXO - Tempo",
       "EXO - Obsession",
       "EXO - CALL ME BABY",
-      "fromis_9 - LOVE BOMB",
       "fromis_9 - DM",
       "fromis_9 - WE GO",
       "fromis_9 - FUN!",
@@ -8747,7 +8746,6 @@ var app = (function () {
       "f(x) - Electric Shock",
       "f(x) - Hot Summer",
       "f(x) - Rum Pum Pum Pum",
-      "Gaho - Start Over",
       "Gaho - Running",
       "GFRIEND - MAGO",
       "GFRIEND - Fever",
@@ -9101,6 +9099,7 @@ var app = (function () {
             url: "https://soundcloud.com/twice-57013/heart-shaker",
             answer: "Twice - Heart Shaker",
           },
+          
           {
             url: "https://soundcloud.com/ana-clara-anjos/exid-ddd",
             answer: "EXID - DDD",
@@ -9132,6 +9131,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/0ws3ltjitb0b/junny-movie",
             answer: "JUNNY - MOVIE",
+          },
+          {
+            url: "https://soundcloud.com/l2share44/fromis_9-love-bomb",
+            answer: "fromis_9 - LOVE BOMB",
           },
           {
             url: "https://soundcloud.com/satgotdepressed/suran-wine-feat-changmoprod-suga",
@@ -9268,6 +9271,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share127/stayc-asap",
             answer: "STAYC - ASAP",
+          },
+          {
+            url: "https://soundcloud.com/l2shareost23/gaho-the-beginning-itaewon-class-ost-part-2",
+            answer: "Gaho - Start Over (Itaewon Class OST)",
           },
         ],
         Pn
