@@ -8790,7 +8790,6 @@ var app = (function () {
       "iKON - Why Why Why",
       "iKON - Dive",
       "iKON - I\’M OK",
-      "I.O.I - Very Very Very",
       "I.O.I - DOWNPOUR",
       "I.O.I - Whatta Man (Good man)",
       "ITZY - Wannabe",
@@ -8845,7 +8844,7 @@ var app = (function () {
       "LOONA - Why Not?",
       "LOONA - So What",
       "LOONA - HULA HOOP",
-      "LOOΠΔ / ODD EYE CIRCLE - Girl Front",
+      "LOONA / ODD EYE CIRCLE - Girl Front",
       "Lovelyz - Now, We",
       "Lovelyz - That day",
       "Lovelyz - Ah-Choo",
@@ -8971,7 +8970,6 @@ var app = (function () {
       "SUNMI - LALALAY",
       "SUNMI - Noir",
       "SUPER JUNIOR - House Party",
-      "SUPER JUNIOR - Lo Siento",
       "SUPER JUNIOR - Sorry Sorry",
       "SUPER JUNIOR - Black Suit",
       "SUPER JUNIOR - Devil",
@@ -9002,7 +9000,6 @@ var app = (function () {
       "TREASURE - DARARI",
       "TREASURE - BOY",
       "Twice - What is Love?",
-      "Twice - TT",
       "Twice - Merry & Happy",
       "Twice - YES or YES",
       "Twice - The Feels",
@@ -9018,7 +9015,6 @@ var app = (function () {
       "Twice - Like Ooh-Ahh",
       "Twice - ICON",
       "Twice - Knock Knock",
-      "TOMORROW X TOGETHER (TXT) - 9 and Three Quarters (Run Away)",
       "TOMORROW X TOGETHER (TXT) - CROWN",
       "TOMORROW X TOGETHER (TXT) - Blue Hour",
       "TOMORROW X TOGETHER (TXT) - Cat & Dog",
@@ -9304,6 +9300,26 @@ var app = (function () {
           {
             url: "https://soundcloud.com/somi_official/anymore",
             answer: "SOMI - Anymore",
+          },
+          {
+            url: "https://soundcloud.com/twice-57013/tt",
+            answer: "Twice - TT",
+          },
+          {
+            url: "https://soundcloud.com/l2share49/super-junior-lo-siento-feat-leslie-grace-me-u-hug",
+            answer: "SUPER JUNIOR, Leslie Grace - Lo Siento",
+          },
+          {
+            url: "https://soundcloud.com/l2share90/txt-run-away",
+            answer: "TOMORROW X TOGETHER (TXT) - 9 and Three Quarters (Run Away)",
+          },
+          {
+            url: "https://soundcloud.com/mina-anh-967372179/very-very-very-ioi",
+            answer: "I.O.I - Very Very Very",
+          },
+          {
+            url: "https://soundcloud.com/l2share140/lee-hi-only",
+            answer: "LeeHi - ONLY",
           },
         ],
         Pn
