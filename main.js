@@ -8599,6 +8599,11 @@ var app = (function () {
       "aespa - Black Mamba",
       "aespa - Forever",
       "aespa - Lucid Dream",
+      "Agust D - Daechwita",
+      "Agust D - ",
+      "Agust D - ",
+      "Agust D - ",
+      "Agust D - ",
       "AKMU - DINOSAUR",
       "AKMU - How People Move",
       "AKMU, IU - NAKKA",
@@ -8615,7 +8620,6 @@ var app = (function () {
       "AOA - Heart Attack",
       "Apink - %% (Eung Eung)",
       "Apink - I\’m so sick",
-      "Apink - Dilemma",
       "Apink - Dumhdurum",
       "Apink - Mr. Chu",
       "Apink - NoNoNo",
@@ -8753,7 +8757,6 @@ var app = (function () {
       "GFRIEND - Rough",
       "GFRIEND - Sunrise",
       "GFRIEND - Time for the moon night",
-      "(G)I-DLE - Latata",
       "(G)I-DLE - HWAA",
       "(G)I-DLE - Senorita",
       "(G)I-DLE - Lion",
@@ -8878,7 +8881,6 @@ var app = (function () {
       "NCT U - 90\’s Love",
       "NCT U - The 7th Sense",
       "NCT U - Misfit",
-      "NCT 127 - Kick It",
       "NCT 127 - Favorite (Vampire)",
       "NCT 127 - Regular",
       "NCT 127 - Sticker",
@@ -8907,7 +8909,6 @@ var app = (function () {
       "Red Velvet - Umpah Umpah",
       "Red Velvet - Dumb Dumb",
       "Red Velvet - Russian Roulette",
-      "Red Velvet - RBB (Really Bad Boy)",
       "Red Velvet - Ice Cream Cake",
       "Red Velvet - Red Flavor",
       "Red Velvet - Peek-A-Boo",
@@ -9099,7 +9100,6 @@ var app = (function () {
             url: "https://soundcloud.com/twice-57013/heart-shaker",
             answer: "Twice - Heart Shaker",
           },
-          
           {
             url: "https://soundcloud.com/ana-clara-anjos/exid-ddd",
             answer: "EXID - DDD",
@@ -9115,6 +9115,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share47/weki-meki-crush",
             answer: "Weki Meki - Crush",
+          },
+          {
+            url: "https://soundcloud.com/gi-dle/latata",
+            answer: "(G)I-DLE - Latata",
           },
           {
             url: "https://soundcloud.com/404wave/epik-high-rosario-feat-cl",
@@ -9275,6 +9279,18 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2shareost23/gaho-the-beginning-itaewon-class-ost-part-2",
             answer: "Gaho - Start Over (Itaewon Class OST)",
+          },
+          {
+            url: "https://soundcloud.com/seasaltfishes/red-velvet-rbb-really-bad",
+            answer: "Red Velvet - RBB (Really Bad Boy)",
+          },
+          {
+            url: "https://soundcloud.com/nct127official/kick-it",
+            answer: "NCT 127 - Kick It",
+          },
+          {
+            url: "https://soundcloud.com/l2share151/aswqer",
+            answer: "Apink - Dilemma",
           },
         ],
         Pn
