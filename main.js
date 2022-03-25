@@ -8832,7 +8832,7 @@ var app = (function () {
       "Kai - Peaches",
       "KEY, Soyeon - I Wanna Be",
       "LABOUM - Between Us",
-      "LABOUM - Journey to Atlantis",
+      "LABOUM - Hwi Hwi",
       "LeeHi - Holo",
       "LeeHi - NO ONE",
       "LeeHi - For You",
@@ -9142,8 +9142,8 @@ var app = (function () {
             answer: "MONSTA X - Shoot Out",
           },
           {
-            url: "https://soundcloud.com/l2share47/laboum-hwi-hwi",
-            answer: "LABOUM - Hwi Hwi",
+            url: "https://soundcloud.com/nanda-aliya/laboum-journey-to-atlantis",
+            answer: "LABOUM - Journey to Atlantis 상상더하기",
           },
           {
             url: "https://soundcloud.com/trblinprds/sik-k-ph-1-jay-park-iffy-prod-groovyroom",
@@ -9313,7 +9313,7 @@ var app = (function () {
             url: "https://soundcloud.com/l2share90/txt-run-away",
             answer: "TOMORROW X TOGETHER (TXT) - 9 and Three Quarters (Run Away)",
           },
-          {
+          { // 65
             url: "https://soundcloud.com/mina-anh-967372179/very-very-very-ioi",
             answer: "I.O.I - Very Very Very",
           },
