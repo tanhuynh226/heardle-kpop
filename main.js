@@ -8600,10 +8600,10 @@ var app = (function () {
       "aespa - Forever",
       "aespa - Lucid Dream",
       "Agust D - Daechwita",
-      "Agust D - ",
-      "Agust D - ",
-      "Agust D - ",
-      "Agust D - ",
+      "Agust D - Moonlight",
+      "Agust D - Give It to Me",
+      "Agust D - The Last",
+      "Agust D - What do you think?",
       "AKMU - DINOSAUR",
       "AKMU - How People Move",
       "AKMU, IU - NAKKA",
@@ -9291,6 +9291,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share151/aswqer",
             answer: "Apink - Dilemma",
+          },
+          {
+            url: "https://soundcloud.com/bangtan/people?in=bangtan/sets/d-2",
+            answer: "Agust D - People",
           },
         ],
         Pn
