@@ -8818,7 +8818,6 @@ var app = (function () {
       "IZ*ONE - FIESTA",
       "IZ*ONE - Highlight",
       "IZ*ONE - Panorama",
-      "Jay Park, Hoody, Loco - All I Wanna Do (K)",
       "Jay Park - MOMMAE",
       "Jay Park, IU - GANADARA",
       "Jay Park, GRAY - DRIVE",
@@ -9108,6 +9107,10 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share47/weki-meki-crush",
             answer: "Weki Meki - Crush",
+          },
+          {
+            url: "https://soundcloud.com/lifespasscode005/jay-park-all-i-wanna-do-k-feat-hoody-loco",
+            answer: "Jay Park, Hoody, Loco - All I Wanna Do (K)",
           },
           { // 15
             url: "https://soundcloud.com/gi-dle/latata",
