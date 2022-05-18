@@ -8734,7 +8734,6 @@ var app = (function () {
       "BTOB - It\’s Okay",
       "BTOB - For You",
       "BTOB - Pray (I\’ll Be Your Man)",
-      "BTS - Spring Day",
       "BTS - FAKE LOVE",
       "BTS - Blood Sweat & Tears",
       "BTS - Boy With Luv",
@@ -8869,7 +8868,6 @@ var app = (function () {
       "IU - Celebrity",
       "IU - Lilac",
       "IU - BBIBBI",
-      "IU - Ending Scene",
       "IU - Strawberry Moon",
       "IU - Through The Night",
       "IU, G-Dragon - Palette",
@@ -9006,7 +9004,6 @@ var app = (function () {
       "SISTAR - Touch my body",
       "SISTAR - I Like That",
       "SISTAR - LONELY",
-      "STAYC - Stereotype",
       "STAYC - SO BAD",
       "STAYC - LOVE FOOL",
       "STAYC - RUN2U",
@@ -9398,6 +9395,18 @@ var app = (function () {
           { // 70
             url: "https://soundcloud.com/enhypen-music/drunk-dazed",
             answer: "ENHYPEN - Drunk-Dazed",
+          },
+          {
+            url: "https://soundcloud.com/l2sharebts3/spring-day",
+            answer: "BTS - Spring Day",
+          },
+          {
+            url: "https://soundcloud.com/shwi_wie/stayc-stereotype",
+            answer: "STAYC - Stereotype",
+          },
+          {
+            url: "https://soundcloud.com/keitaghaisani/iu-ending-scene",
+            answer: "IU - Ending Scene",
           },
         ],
         Pn
