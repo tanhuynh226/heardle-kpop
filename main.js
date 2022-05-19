@@ -8715,7 +8715,6 @@ var app = (function () {
       "BLACKPINK - Forever Young",
       "BLACKPINK - Kill This Love",
       "BLACKPINK - DDU-DU DDU-DU",
-      "BLACKPINK - PLAYING WITH FIRE",
       "BOL4 - X Song",
       "BOL4 - Bom",
       "BOL4 - Workaholic",
@@ -8877,7 +8876,6 @@ var app = (function () {
       "ITZY - Weapon",
       "IU - Celebrity",
       "IU - Lilac",
-      "IU - BBIBBI",
       "IU - Ending Scene",
       "IU - Strawberry Moon",
       "IU - Through The Night",
@@ -9478,6 +9476,14 @@ var app = (function () {
           {
             url: "https://soundcloud.com/l2share130/nct-dream-hot-sauce",
             answer: "NCT Dream - Hot Sauce (맛)",
+          },
+          {
+            url: "https://soundcloud.com/l2share42/playing-with-fire",
+            answer: "BLACKPINK - PLAYING WITH FIRE", 
+          },
+          { // 80
+            url: "https://soundcloud.com/l2share78/iu-bbibbi",
+            answer: "IU - BBIBBI",
           },
         ],
         Pn
